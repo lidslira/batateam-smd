@@ -1,13 +1,16 @@
 import { ReactElement } from 'react';
+import Header  from '../../components/header';
 import * as S from './styles';
 
 function Home(): ReactElement {
   return (
-    <S.Container>
-      <S.Section>
+    <S.ContainerDiv>
+      <Header/>
+      <S.Container>
         <h1>HOME!</h1>
-      </S.Section>
     </S.Container>
+    </S.ContainerDiv>
+    
   );
 }
 
