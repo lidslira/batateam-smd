@@ -9,7 +9,6 @@ export const Container = styled.main`
   align-items: center;
   min-height: 100vh;
 
-  padding: 5px;
 
   .button {
     width: 100%;

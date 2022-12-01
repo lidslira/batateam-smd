@@ -13,6 +13,7 @@ function Navbar() {
     width: 0,
     height: 0,
   });
+  
   useEffect(() => {
     const handleResize = () => {
       setSize({
@@ -26,7 +27,7 @@ function Navbar() {
   }, []);
 
   useEffect(() => {
-    if (size.width > 780 && menuOpen) {
+    if (size.width > 768 && menuOpen) {
       setMenuOpen(false);
     }
   }, [size.width, menuOpen]);
