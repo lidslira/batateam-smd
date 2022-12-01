@@ -1,7 +1,7 @@
-import PreInitial from "./pages/pre-initial";
+import Routes from "./routes";
 
 function App() {
-  return <PreInitial/>
+  return <Routes/>
 }
 
 export default App
