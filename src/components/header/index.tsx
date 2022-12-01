@@ -13,7 +13,7 @@ function Navbar() {
     width: 0,
     height: 0,
   });
-  
+
   useEffect(() => {
     const handleResize = () => {
       setSize({
@@ -48,6 +48,12 @@ function Navbar() {
           `}
         >
           <ul>
+            <li>
+              <Link to="/explanation">Tela de </Link>
+            </li>
+            <li>
+              <Link to="/trails">Trilhas</Link>
+            </li>
             <li>
               <Link to="/trails">Trilhas</Link>
             </li>

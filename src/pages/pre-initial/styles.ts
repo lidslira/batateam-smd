@@ -15,8 +15,9 @@ export const Container = styled.main`
     border-radius: 8px;
     border: none;
 
-    background: #333;
-    color: #fff;
+    background: #A8C2D3;
+    box-shadow: 1px 1px 9px #000;
+    color: #000;
 
     display: flex;
     align-items: center;
@@ -25,7 +26,7 @@ export const Container = styled.main`
     min-width: 250px;
     max-height: 53px;
 
-    margin: 20px 0px 20px 0px;
+    margin: 30px 0px 20px 0px;
 
     font-size: 1.25rem;
 
@@ -33,7 +34,7 @@ export const Container = styled.main`
     transition: background 0.2s;
 
     &:hover {
-      background: grey;
+      background: #93AABA;
     }
   }
 `;
@@ -43,15 +44,20 @@ export const Section = styled.section`
   width: 100%;
 
   h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     word-wrap: break-word;
-    font-size: 1.8rem;
-    margin-bottom: 4px;
+    font-size: 4rem;
+    margin-bottom: 0px;
   }
 
   h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     word-wrap: break-word;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: normal;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 

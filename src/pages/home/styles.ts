@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { device } from '../../constants/breakpoints';
 
-export const ContainerDiv = styled.div``;
+export const ContainerDiv = styled.div`
+`;
 
 export const Container = styled.main`
   display: flex;

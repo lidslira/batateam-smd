@@ -24,19 +24,26 @@ function Explanation(): ReactElement {
 
   return (
     <S.Container>
+      <div>
       <S.Sidebar>
         <S.Section>
         <h1>Antes de prosseguir...</h1>
         <p>{text}</p>
-        <S.DotsContainer>
-         <FiChevronLeft size={30} onClick={() => !isFirst && handleBackward()} />
-          {Pages.map((item, indexKey) => <S.Dot key={indexKey} isActive={item.index === index}/> )} 
-        <FiChevronRight size={30} onClick={() => !isLast && handleFoward()} /> 
-        </S.DotsContainer>
-        <S.Button disabled={!isLast} onClick={() => navigate('/home')}>Começar</S.Button>
       </S.Section>
-      </S.Sidebar>
       <S.Image />
+      </S.Sidebar>
+      <S.DotsContainer>
+        {!isFirst && <FiChevronLeft size={20} onClick={() => handleBackward()} /> }
+          {Pages.map((item, indexKey) => <S.Dot key={indexKey} isActive={item.index === index}/> )} 
+        { !isLast && <FiChevronRight size={20} onClick={() => handleFoward()} /> }
+        </S.DotsContainer>
+        <S.Skip>
+          <button type="submit" className="skip" onClick={() => navigate('/home')}>{isLast ? 'Começar' : 'Pular'}</button>
+        </S.Skip>
+        </div>
+        {/* <S.ButtonContainer>
+        { isLast && <S.Button onClick={() => navigate('/home')}>Começar</S.Button> }
+        </S.ButtonContainer> */}
     </S.Container>
   );
 }
