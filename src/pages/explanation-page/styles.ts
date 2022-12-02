@@ -16,10 +16,10 @@ export const Container = styled.main`
 
   .skip {
   display: flex;
-  font-size: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
-  font-weight: 500;
-  margin-top: 10px;
+  font-weight: 600;
+  margin: 10px;
   justify-content: end;
 
   cursor: pointer;
@@ -96,11 +96,11 @@ export const Section = styled.section`
   width: 100%;
 
   h1 {
-    font-size: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    word-wrap: break-word;
-    font-size: 2rem;
-    margin-bottom: 10px;
+    word-wrap: break-word;    
+    font-size: 2.5rem;
+    margin-bottom: 20px;
   }
 
   h2 {
@@ -111,10 +111,11 @@ export const Section = styled.section`
   }
 
   p {
-    font-size: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 10px 0px 5px 0px;
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: 500;
+    line-height: 1.8rem;
   }
 
   div {

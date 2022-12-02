@@ -22,6 +22,7 @@ function Explanation(): ReactElement {
     setText(Pages[index-1].content)
   }
 
+  //const boldString = (str: string, boldString: string) => str.replace(RegExp(boldString, 'g'), `<b>${boldString}</b>`);
   return (
     <S.Container>
       <div>

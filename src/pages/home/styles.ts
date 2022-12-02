@@ -1,14 +1,16 @@
 import styled from 'styled-components';
-import { device } from '../../constants/breakpoints';
 
-export const ContainerDiv = styled.div`
+export const ContainerDiv = styled.main`
+  width: 100%;
 `;
 
-export const Container = styled.main`
+export const Container = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  flex-direction: column;
 
 
   .button {
@@ -38,6 +40,12 @@ export const Container = styled.main`
       background: grey;
     }
   }
+`;
+
+export const AreaSection = styled.section`
+  background-color: yellow;
+  margin-top: 20px;
+  width: 100%;
 `;
 
 export const Section = styled.section`
@@ -83,4 +91,31 @@ export const Skip = styled.div`
   margin-top: 5px;
   display: flex;
   justify-content: end;
+`;
+
+export const Button = styled.button`
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+  background: #A8C2D3;
+  color: #000;
+  box-shadow: 1px 1px 5px #000;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-height: 53px;
+
+  margin: 15px 0px 10px 0px;
+
+  font-size: 1.25rem;
+
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #93AABA;
+  }
 `;

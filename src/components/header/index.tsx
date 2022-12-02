@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BiMenuAltRight } from "react-icons/bi";
+import { BiMenu, BiSearchAlt2 } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import "./navbar.scss";
@@ -39,9 +39,9 @@ function Navbar() {
   return (
     <header className="header">
       <div className="header__content">
-        <Link to="/home" className="header__content__img">
+        {/* <Link to="/home" className="header__content__img">
           <img className="header__content__img" src={LogoBatateam} alt="Logo Batateam" />
-        </Link>
+        </Link> */}
         <nav
           className={`${"header__content__nav"} 
             ${menuOpen && size.width < 780 ? `${"isMenu"}` : ""}
@@ -49,16 +49,13 @@ function Navbar() {
         >
           <ul>
             <li>
-              <Link to="/explanation">Tela de </Link>
+              <Link to="/explanation">Tela de Explicação</Link>
             </li>
             <li>
-              <Link to="/trails">Trilhas</Link>
+              <a href="#trilhas">Trilhas</a>
             </li>
             <li>
-              <Link to="/trails">Trilhas</Link>
-            </li>
-            <li>
-              <Link to="/disciplinas">Disciplinas</Link>
+              <a href="#disciplinas">Disciplinas</a>
             </li>
             <li>
               <Link to="/survey">Teste de afinidade</Link>
@@ -66,18 +63,20 @@ function Navbar() {
             <li>
               <Link to="/help">FAQ</Link>
             </li>
-
-            <input className="input-field" type="search" placeholder="Pesquisar disciplina" aria-label="Search" />
-            <button className="btn">Buscar</button>
           </ul>
         </nav>
         <div className="header__content__toggle">
           {!menuOpen ? (
-            <BiMenuAltRight onClick={menuToggleHandler} />
+            <BiMenu onClick={menuToggleHandler} />
           ) : (
             <AiOutlineClose onClick={menuToggleHandler} />
           )}
         </div>
+        <input className="input-field" type="search" aria-label="Search">
+            {/* <div className="input-icon">
+              <BiSearchAlt2/> 
+            </div> */}
+        </input>
       </div>
     </header>
   )

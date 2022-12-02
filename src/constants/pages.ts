@@ -1,11 +1,13 @@
+let boldPart0= `Sistemas Multimídias e Mídias Digitais`;
+
 export default [
   {
     index: 0,
-    content: `Você precisa saber que o SMD é um curso que pretende formar profissionais mais completos, abordando conhecimentos em duas grandes áreas: <a style="font-weight: 700;">Sistemas Multimídia e Mídias Digitais</a>.`
+    content: `Você precisa saber que o SMD é um curso que pretende formar profissionais mais completos, abordando conhecimentos em duas grandes áreas: ${boldPart0}.`
   },
   {
     index: 1,
-    content: `Assim, nos primeiros semestres vão ser ofertadas <b>disciplinas obrigatórias</b> que vão prover uma base de conhecimentos generalista para todos os estudantes.`
+    content: `Assim, nos primeiros semestres vão ser ofertadas disciplinas obrigatórias que vão prover uma base de conhecimentos generalista para todos os estudantes.`
   },
   {
     index: 2,
@@ -13,11 +15,11 @@ export default [
   },
   {
     index: 3,
-    content: `E a partir do quinto dá-se início aos itinerários formativos, também conhecidos como <b>trilhas</b>. Elas pretendem fornecer um caminho mais especializado, dividindo as <b>disciplinas optativas</b> em áreas que o estudante pode escolher seguir.`
+    content: `E a partir do quinto dá-se início aos itinerários formativos, também conhecidos como trilhas. Elas pretendem fornecer um caminho mais especializado, dividindo as disciplinas optativas em áreas que o estudante pode escolher seguir.`
   },
   {
     index: 4,
-    content: `No momento as quatro trilhas existentes são: <li><b>Animação e Audiovisual</b></li>; <li><b>Design Digital Interativo</b></li>; <li><b>Jogos Digitais</b></li>; e <li><b>Sistemas Multimídia</b></li>.`
+    content: `No momento as quatro trilhas existentes são: Animação e Audiovisual; Design Digital Interativo; Jogos Digitais; e Sistemas Multimídia.`
   },
   {
     index: 5,
