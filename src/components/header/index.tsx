@@ -52,6 +52,9 @@ function Navbar() {
         >
           <ul>
             <li>
+              <Link to="/home">Home</Link>
+            </li>
+            <li>
               <Link to="/explanation">Tela de Explicação</Link>
             </li>
             <li>
@@ -93,7 +96,7 @@ function Navbar() {
         </nav>
         <div className="header__content__toggle">
           {!menuOpen ? (
-            <BiMenu onClick={menuToggleHandler} />
+            <BiMenu color={"#425968"}onClick={menuToggleHandler} />
           ) : (
             <AiOutlineClose onClick={menuToggleHandler} />
           )}

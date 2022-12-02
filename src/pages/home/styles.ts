@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const ContainerDiv = styled.main`
   width: 100%;
+  max-width: 1920px;
 `;
 
 export const Container = styled.div`
@@ -43,7 +44,6 @@ export const Container = styled.div`
 `;
 
 export const AreaSection = styled.section`
-  background-color: yellow;
   margin-top: 20px;
   width: 100%;
 `;
@@ -110,7 +110,7 @@ export const Button = styled.button`
 
   margin: 15px 0px 10px 0px;
 
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 
   cursor: pointer;
   transition: background 0.2s;

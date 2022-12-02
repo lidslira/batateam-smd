@@ -12,6 +12,7 @@ function Home(): ReactElement {
     <S.ContainerDiv>
       <Header/>
         <S.Container>
+
           <S.AreaSection id="trilhas" >
             <AreasComponent
               title={homeAreas[0].title}
@@ -40,6 +41,7 @@ function Home(): ReactElement {
                 </>
               }/>
           </S.AreaSection>
+
           <S.AreaSection id="teste-afinidade" >
             <AreasComponent
               title={homeAreas[2].title}
@@ -50,6 +52,7 @@ function Home(): ReactElement {
                 </>
               }/>
           </S.AreaSection>
+
           <S.AreaSection id="faq" >
             <AreasComponent
               hasSpecialBg
@@ -58,10 +61,11 @@ function Home(): ReactElement {
               description={homeAreas[3].description}
               children= {
                 <>
-                <S.Button onClick={() => navigate('/faq')}>Acessar</S.Button>
+                <S.Button onClick={() => navigate('/help')}>Acessar</S.Button>
                 </>
               }/>
           </S.AreaSection>
+          
         </S.Container>
       <Footer/>
     </S.ContainerDiv>

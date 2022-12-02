@@ -49,16 +49,17 @@ export const Section = styled.section`
   }
 
   h2 {
+    font-family: 'Poppins', sans-serif;
     word-wrap: break-word;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin: 15px 0px 25px 0px;
   }
 
   p {
     font-family: 'Poppins', sans-serif;
     margin: 10px 0px 5px 0px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.8rem;
 

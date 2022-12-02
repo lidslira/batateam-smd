@@ -13,6 +13,7 @@ function AreasComponent(props: AreasProps): ReactElement {
         { props.isImageLeft && <S.Image isImageLeft/> }
           <S.Section>
           <h1>{props.title}</h1>
+          <h2>{props.subtitle}</h2>
           <p>{props.description}</p>
           <S.ButtonContainer>
             {props.children}
