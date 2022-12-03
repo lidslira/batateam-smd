@@ -11,7 +11,7 @@
     padding: 0;
     html {
         scroll-behavior: smooth;
-      }
+    }
 }
 
 .header {
@@ -100,18 +100,18 @@
               flex-direction: column;
               margin-bottom: 32px;
               text-align: center;
-              @include breakpoint(md) {
-                  flex-direction: row;
-                  text-align: center;
-                  align-items: center;
-                  margin-bottom: 0;
-                  margin-right: calc(0.5rem + #{16px});
-              }
-              li {
+            @include breakpoint(md) {
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                margin-bottom: 0;
+                margin-right: calc(0.5rem + #{16px});
+            }
+            li {
                 font-family: 'Poppins', sans-serif;
                 margin-bottom:32px;
                 border-bottom: 2px solid #DECBC0;
-                font-size: 2rem;
+                font-size: 1.7rem;
                 
                 @include breakpoint(md) {
                     font-family: 'Poppins', sans-serif;
@@ -130,7 +130,7 @@
                     transition: 0.3s ease all;
 
                     &:hover {
-                        background: rgba(rgb(171, 123, 211), 0.1);
+                        background: rgba(#6fb4e2, 0.1);
                     }
                     &:active {
                         border-radius: calc(#{12px} + 6px);
@@ -139,33 +139,6 @@
                 }
             }
         }
-
-        .btn {
-            cursor: pointer;
-            outline: none;
-            padding: 0.45rem 0.75rem;
-            border-radius: 12px;
-            font-size: 1rem;
-            font-family: inherit;
-            background: rgb(162, 162, 246);
-            color: rgb(32, 32, 32);
-            border: 1px solid transparent;
-            transition: 0.3s ease all;
-            margin:0.50em 0.50em;
-            
-
-            &:hover {
-                border-color: rgb(162, 162, 246);
-                background: rgba(rgb(162, 162, 246), 0.1);
-                color: rgb(162, 162, 246);
-            }
-            &:active {
-                border-color: rgb(162, 162, 246);
-                background: linear-gradient(rgba(rgb(162, 162, 246), 0.2), rgba(rgb(162, 162, 246), 0.3));
-                color: rgb(162, 162, 246);
-            }
-              
-          }
 
           &.isMenu {
               transform: translate(100%);
@@ -181,7 +154,7 @@
           position: relative;
 
           &:hover {
-              color: rgb(162, 162, 246);
+              color: #6fb4e2;
           }
 
           @include breakpoint(md) {

@@ -11,6 +11,7 @@ import FAQ from '../pages/faq';
 import Survey from '../pages/survey';
 import SurveyQuestions from '../pages/survey/survey-questions';
 import SurveyResults from '../pages/survey/survey-results';
+import Audiovisual from '../pages/Trails/Audiovisual';
 
 const AllRoutes = () => {
   return (
@@ -24,6 +25,9 @@ const AllRoutes = () => {
         <Route path="/survey" element={ <Survey /> } />
         <Route path="/survey-questoes" element={ <SurveyQuestions /> } />
         <Route path="/survey-resultados" element={ <SurveyResults /> } />
+        <Route path="/help" element={ <FAQ/> } />
+        <Route path="/audiovisual" element={ <Audiovisual/> } />
+        <Route path="/help" element={ <FAQ/> } />
         <Route path="/help" element={ <FAQ/> } />
         <Route path="*" element={ <ErrorPage /> } />
       </Routes>

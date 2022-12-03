@@ -14,7 +14,7 @@ export const Container = styled.main<ContainerProps>`
   display: flex;
   align-items: center;
   margin: 0px 0px 0px 0px;
-  padding: 5px;
+  padding: 15px 10px 15px 10px;
   padding-bottom: 10px;
   flex-direction: column;
 
@@ -49,7 +49,7 @@ export const Section = styled.section`
   }
 
   h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif, sans-serif;
     word-wrap: break-word;
     font-size: 1.2rem;
     font-weight: normal;
@@ -57,7 +57,7 @@ export const Section = styled.section`
   }
 
   p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif, sans-serif;
     margin: 10px 0px 5px 0px;
     font-size: 1.1rem;
     font-weight: 400;

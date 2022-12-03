@@ -7,6 +7,7 @@ export const Footer = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 
   > p {
     margin-right: 5px;
@@ -15,7 +16,7 @@ export const Footer = styled.footer`
 `;
 
 export const ImageContainer = styled.div`
-  display: inline-block;
+  /* display: inline-block; */
   flex-direction: row;
 `;
 

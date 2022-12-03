@@ -28,10 +28,10 @@ export const ButtonContainer = styled.div`
 export const Button = styled.button`
   border-radius: 4px;
   border: none;
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
   background: #A8C2D3;
   color: #000;
-  box-shadow: 1px 1px 9px #000;
+  box-shadow: 1px 1px 4px #000;
 
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@ export const Button = styled.button`
   margin: 20px 0px 20px 50px;
 
   font-size: 1.25rem;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 
   cursor: pointer;
   transition: background 0.2s;
@@ -57,7 +57,7 @@ export const Section = styled.section`
   width: 100%;
 
   h1 {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     word-wrap: break-word;    
     font-size: 2.5rem;
@@ -65,7 +65,7 @@ export const Section = styled.section`
   }
 
   p {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     margin: 10px 0px 5px 0px;
     font-size: 1rem;
     font-weight: 500;
