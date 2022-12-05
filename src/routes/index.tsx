@@ -11,7 +11,10 @@ import FAQ from '../pages/faq';
 import Survey from '../pages/survey';
 import SurveyQuestions from '../pages/survey/survey-questions';
 import SurveyResults from '../pages/survey/survey-results';
-import Audiovisual from '../pages/Trails/Audiovisual';
+import Audiovisual from '../pages/trails/Audiovisual';
+import Design from '../pages/trails/DesignDigital';
+import Jogos from '../pages/trails/Jogos';
+import Sistemas from '../pages/trails/Sistemas';
 
 const AllRoutes = () => {
   return (
@@ -22,13 +25,16 @@ const AllRoutes = () => {
         <Route path="/welcome" element={ <Welcome/> } />
         <Route path="/home" element={ <Home/> } />
         <Route path="/help" element={ <FAQ/> } />
+
         <Route path="/survey" element={ <Survey /> } />
         <Route path="/survey-questoes" element={ <SurveyQuestions /> } />
         <Route path="/survey-resultados" element={ <SurveyResults /> } />
-        <Route path="/help" element={ <FAQ/> } />
+
         <Route path="/audiovisual" element={ <Audiovisual/> } />
-        <Route path="/help" element={ <FAQ/> } />
-        <Route path="/help" element={ <FAQ/> } />
+        <Route path="/design" element={ <Design/> } />
+        <Route path="/jogos" element={ <Jogos/> } />
+        <Route path="/sistemas" element={ <Sistemas/> } />
+
         <Route path="*" element={ <ErrorPage /> } />
       </Routes>
     </Router>

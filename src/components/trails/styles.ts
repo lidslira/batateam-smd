@@ -28,10 +28,6 @@ export const Sidebar = styled.div`
   align-items: center;
 `;
 
-export const ButtonContainer = styled.div`
-  width: 100%;
-`;
-
 export const Section = styled.section`
   max-width: 500px;
   width: 100%;
@@ -51,21 +47,32 @@ export const Section = styled.section`
   h2 {
     font-family: 'Poppins', sans-serif;
     word-wrap: break-word;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: normal;
-    margin: 15px 0px 25px 0px;
+    margin: 30px 0px 10px 0px;
   }
 
   p {
     font-family: 'Poppins', sans-serif;
     margin: 10px 0px 5px 0px;
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 1.8rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7rem;
 
     @media (${device.mobile}) {
       font-size: 1.1rem;
     }
+  }
+
+  ul {
+    margin: 20px 0px 10px 10px;
+  }
+
+  li {
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 0px 5px 0px;
+    font-size: 1rem;
+    font-weight: 300;
   }
 
   div {
@@ -75,10 +82,27 @@ export const Section = styled.section`
 
 export const Image = styled.div<ImageProps>`
   display: flex;
-  height: 400px;
+  max-height: 400px;
+  height: 350px;
   width: 100%;
   margin: ${({ isImageLeft }) => isImageLeft ? `0px 30px 0px 0px` : '0px 0px 0px 30px'};
   max-width: 300px;
   padding: 0px 3px 0px 3px;
   border: 2px dashed black;
+`;
+
+export const Button = styled.button`
+  display: flex;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  justify-content: end;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  color: #27282C;
+
+  cursor: pointer;
+  
+  background-color: transparent;
+  border: none;
 `;

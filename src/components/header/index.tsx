@@ -66,10 +66,10 @@ function Navbar() {
             </li>
             {trailsOpen &&
                 <>
-                  <li className="li-modal">Animação/Audiovisual</li>
-                  <li className="li-modal">Design Interativo</li>
-                  <li className="li-modal">Jogos Digitais</li>
-                  <li className="li-modal">Sistemas Multimídias</li>
+                  <li className="li-modal"><a href="/audiovisual">Animação/Audiovisual</a></li>
+                  <li className="li-modal"><a href="/design">Design Interativo</a></li>
+                  <li className="li-modal"><a href="/jogos">Jogos Digitais</a></li>
+                  <li className="li-modal"><a href="/sistemas">Sistemas Multimídias</a></li>
                 </>
               }
             <li>

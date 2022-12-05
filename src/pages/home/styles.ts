@@ -6,7 +6,7 @@ export const ContainerDiv = styled.main`
 `;
 
 export const Container = styled.div`
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
