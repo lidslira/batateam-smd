@@ -15,6 +15,7 @@ import Audiovisual from '../pages/trails/Audiovisual';
 import Design from '../pages/trails/DesignDigital';
 import Jogos from '../pages/trails/Jogos';
 import Sistemas from '../pages/trails/Sistemas';
+import Disciplinas from '../pages/disciplinas';
 
 const AllRoutes = () => {
   return (
@@ -34,6 +35,8 @@ const AllRoutes = () => {
         <Route path="/design" element={ <Design/> } />
         <Route path="/jogos" element={ <Jogos/> } />
         <Route path="/sistemas" element={ <Sistemas/> } />
+
+        <Route path="/optativas" element={ <Disciplinas /> } />
 
         <Route path="*" element={ <ErrorPage /> } />
       </Routes>
