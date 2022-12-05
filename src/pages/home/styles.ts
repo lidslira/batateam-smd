@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const ContainerDiv = styled.main`
-  width: 100%;
-  max-width: 1920px;
+export const ContainerDiv = styled.div`
+  /* width: 100%; */
+  /* max-width: 1920px; */
 `;
 
 export const Container = styled.div`
-  /* width: 100%; */
+  width: 105%;
   display: flex;
   justify-content: center;
   align-items: center;

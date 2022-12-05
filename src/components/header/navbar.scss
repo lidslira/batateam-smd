@@ -1,16 +1,16 @@
-@mixin breakpoint($point) {
-    @if $point == md {
-        @media (min-width: 48em) {
-            @content;
-        }
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
     html {
         scroll-behavior: smooth;
+    }
+}
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        @media (min-width: 48em) {
+            @content;
+        }
     }
 }
 

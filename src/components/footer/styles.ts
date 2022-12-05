@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Footer = styled.footer`
   background: #688CA5;
-  width: 100%;
+  width: 105.5%;
   padding: 5px;
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,6 @@ export const Footer = styled.footer`
 `;
 
 export const ImageContainer = styled.div`
-  /* display: inline-block; */
   flex-direction: row;
 `;
 

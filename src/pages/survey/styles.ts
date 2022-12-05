@@ -10,7 +10,7 @@ export const AreaSection = styled.section`
 `;
 
 export const Container = styled.div`
-  width: 100%;
+  width: 105%;
   display: flex;
   margin-top: 40px;
   align-items: center;
