@@ -58,7 +58,7 @@ function Navbar() {
               <Link to="/explanation">Tela de Explicação</Link>
             </li>
             <li>
-              <a href="#trilhas">Trilhas</a> { menuOpen ? 
+              <a href="/home#trilhas">Trilhas</a> { menuOpen ? 
               trailsOpen ? 
                 <FiChevronUp size={30} onClick={() => setTrailsOpen(false)}/> : 
                 <FiChevronDown size={30} onClick={() => setTrailsOpen(true)}/> 
@@ -73,7 +73,7 @@ function Navbar() {
                 </>
               }
             <li>
-              <a href="#disciplinas">Disciplinas</a> { menuOpen ? 
+              <a href="/home#disciplinas">Disciplinas</a> { menuOpen ? 
               coursesOpen ? 
                 <FiChevronUp size={30} onClick={() => setCoursesOpen(false)}/> : 
                 <FiChevronDown size={30} onClick={() => setCoursesOpen(true)}/> 
@@ -81,9 +81,9 @@ function Navbar() {
             </li>
             {coursesOpen &&
                 <>
-                  <li className="li-modal">Obrigatórias</li>
-                  <li className="li-modal">Eletivas</li>
-                  <li className="li-modal">Optativas</li>
+                  <li className="li-modal"><a href='/obrigatórias'>Obrigatórias</a></li>
+                  <li className="li-modal"><a href='/eletivas'>Eletivas</a></li>
+                  <li className="li-modal"><a href="/optativas">Optativas</a></li>
                 </>
               }
             <li>

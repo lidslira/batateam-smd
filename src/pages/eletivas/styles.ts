@@ -1,35 +1,19 @@
 import styled from 'styled-components';
+import { device } from '../../constants/breakpoints';
 
 interface AreaProps {
   hasSpecialBg?: boolean;
 }
 
-export const ContainerDiv = styled.main`
-  width: 100%;
-`;
-
-export const AreaSection = styled.section<AreaProps>`
-  width: 100%;
-  margin-top: 20px;
-  align-items: center;
-  justify-content: center;
-  background-color: ${({ hasSpecialBg }) => hasSpecialBg ? '#F1EDE6' : '#fff'};
-`;
-
 export const Container = styled.div`
-  width: 105%;
-  display: flex;
-  margin: 40px 0px 20px 0px;
   align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
-
+  width: 105%;
   h1 {
     font-family: 'Poppins', sans-serif;
     word-wrap: break-word;
     font-weight: bold;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin: 20px 0px 20px 20px;
   }
 
   h2 {
@@ -42,10 +26,30 @@ export const Container = styled.div`
 
   p {
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 4px;
+    margin: 0px 0px 4px 20px;
     font-weight: normal;
-    text-align: center;
   }
+`;
+
+export const AreaSection = styled.section<AreaProps>`
+  width: 101%;
+  margin-top: 20px;
+  padding: 10px 0px 10px 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: ${({ hasSpecialBg }) => hasSpecialBg ? '#F1EDE6' : '#fff'};
+
+  div {
+    /* width: 60%; */
+    justify-content: center;
+  }
+`;
+
+export const SemesterContainer = styled.div`
+  @media (${device.mobile}) {
+    width: 100%;
+  }
+  width: 40%;
 `;
 
 export const Button = styled.div`
@@ -58,9 +62,7 @@ export const Button = styled.div`
 
   font-family: 'Poppins', sans-serif;
 
-  /* width: 100%; */ //SEE LATER
-  width: 300px;
-  display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
 
@@ -68,5 +70,5 @@ export const Button = styled.div`
 
   margin: 15px 20px 10px 20px;
 
-  font-size: 1.2rem;
+  font-size: 1rem;
 `;

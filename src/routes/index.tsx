@@ -15,7 +15,9 @@ import Audiovisual from '../pages/trails/Audiovisual';
 import Design from '../pages/trails/DesignDigital';
 import Jogos from '../pages/trails/Jogos';
 import Sistemas from '../pages/trails/Sistemas';
-import Disciplinas from '../pages/disciplinas';
+import Optativas from '../pages/optativas';
+import Obrigatórias from '../pages/obrigatórias';
+import Eletivas from '../pages/eletivas';
 
 const AllRoutes = () => {
   return (
@@ -36,7 +38,9 @@ const AllRoutes = () => {
         <Route path="/jogos" element={ <Jogos/> } />
         <Route path="/sistemas" element={ <Sistemas/> } />
 
-        <Route path="/optativas" element={ <Disciplinas /> } />
+        <Route path="/obrigatórias" element={ <Obrigatórias /> } />
+        <Route path="/eletivas" element={ <Eletivas /> } />
+        <Route path="/optativas" element={ <Optativas /> } />
 
         <Route path="*" element={ <ErrorPage /> } />
       </Routes>

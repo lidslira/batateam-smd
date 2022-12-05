@@ -1,7 +1,7 @@
 export default [
   {
     title: 'Animação/Audiovisual',
-    optativas: [
+    disciplinas: [
       'Educomunicação',
       'Ferramentas de Model. 3D I',
       'Ferramentas de Model. 3D II',
@@ -17,7 +17,7 @@ export default [
   },
   {
     title: 'Design Digital',
-    optativas: [
+    disciplinas: [
       'Concepção de Cenários e Pers.',
       'Computação Física',
       'Design Emocional',
@@ -31,7 +31,7 @@ export default [
   },
   {
     title: 'Jogos Digitais',
-    optativas: [
+    disciplinas: [
       'Concepção de Cenários e Pers.',
       'Cultura de Jogos',
       'Design de Jogos Digitais',
@@ -45,7 +45,7 @@ export default [
   },
   {
     title: 'Sistemas Multimídias',
-    optativas: [
+    disciplinas: [
       'Análise de Desempenho',
       'Computação Móvel e Ubíqua',
       'Linguagem de Prog. Script',
