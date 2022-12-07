@@ -135,7 +135,7 @@ export const ImageContainer = styled.div`
   margin: 0px 0px 0px 10px;
   max-width: 300px;
   padding: 0px 3px 0px 3px;
-  border: 2px dashed black;
+  /* border: 2px dashed black; */
 
   @media ${device.mobile} {
     height: 350px;

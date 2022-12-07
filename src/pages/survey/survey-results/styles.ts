@@ -72,7 +72,7 @@ export const ImageContainer = styled.div`
   margin: 0px 45px 0px 0px;
   max-width: 200px;
   padding: 0px 3px 0px 3px;
-  border: 2px dashed black;
+  /* border: 2px dashed black; */
 
   @media ${device.mobile} {
     height: 350px;
