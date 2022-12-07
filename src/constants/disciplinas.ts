@@ -38,9 +38,9 @@ export default [
   {
     title: 'Sistemas Multimídias',
     list: [
-      'Game Design',
-      'Pesquisa em Jogos',
-      'Prototipação de Jogos 3D',
+      'Análise e projeto de sistemas multimídia',
+      'Programação para World Wide Web',
+      'Programação para sistemas embarcados',
     ]
   },
 ]

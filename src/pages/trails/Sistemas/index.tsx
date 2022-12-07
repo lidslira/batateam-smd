@@ -15,7 +15,7 @@ function Sistemas(): ReactElement {
               title={'Sistemas Multimídias'}
               navigateToCourses={'disciplinas-sistemas'}
               subtitle={'Objetivo'}
-              description={'Apresentar uma visão integrada do desenvolvimento de jogos (e aplicações interativas em geral), em uma perspectiva multirreferencial, contemplando computação, arte e cultura.'}
+              description={'Capacitar os alunos a analisar requisitos, projetar, implementar, testar, implantar, avaliar e manter sistemas computacionais para que atendam as necessidades do público alvo específico.'}
             />
           </S.AreaSection>
 
@@ -23,7 +23,7 @@ function Sistemas(): ReactElement {
             <TrailsComponent
               hasSpecialBg
               isImageLeft
-              description={'Os componentes curriculares da trilha oferecem múltiplas perspectivas sobre a interatividade em multimídia digital, contemplando aspectos teóricos e práticos no desenvolvimento de jogos.'}
+              description={'Busca desenvolver nos discentes a capacidade de representar as informações nestes sistemas de forma múltipla, como por meio de imagens, vídeos e linguagem sonora, sejam elas integradas ou isoladas em mídias interativas.'}
             />
           </S.AreaSection>
 
@@ -39,13 +39,13 @@ function Sistemas(): ReactElement {
               hasSpecialBg
               isImageLeft
               subtitle={'Mercado de Trabalho: '}
-              description={'A pessoa que faz essa trilha tem interesse em exercer atividades de game designer, programador, animador, designer de personagem, designer de cenário, level designer, tester e produtor executivo.'}
+              description={'A pessoa que faz essa trilha tem interesse em exercer atividades de programação web, análise de projetos embarcados, programação para dispositivos móveis, análise de sistemas distribuídos e desenvolvimento de aplicações.'}
             />
           </S.AreaSection>
 
           <S.AreaSection >
             <TrailsComponent
-              description={'Sendo assim, além das oportunidades de trabalhar em estúdios de jogos, outras áreas que requerem conhecimentos de quem faz essa trilha são as de jogos educacionais; simulações como as médicas, de operação de equipamentos complexos ou de negócios; jogos feitos para empresas, além de estúdios de animação para quem gosta da área de arte.'}
+              description={'Sendo assim, poderá encontrar oportunidades em desenvolvimento web no planejamento, teste e manutenção em sites institucionais, blogs, lojas virtuais, sistemas web e diversos tipos de aplicações que rodam em plataformas web; Desenvolvimentos de aplicações multimídia; Análise e projeto de sistemas multimídia.'}
             />
           </S.AreaSection>
           
