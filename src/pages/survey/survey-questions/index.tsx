@@ -135,8 +135,8 @@ const handleScore = () => {
     }
   }
   console.log(recomendations)
-  function removeDuplicates(arr) {
-    return arr.filter((item, index) => arr.indexOf(item) === index);
+  function removeDuplicates(arr: any[]) {
+    return arr.filter((item: any, index: any) => arr.indexOf(item) === index);
 }
   removeDuplicates(recomendations);
   return (
