@@ -13,7 +13,7 @@ function SurveyQuestions() {
   const refLikert = useRef(null);
   const location = useLocation();
   let userName = location.state.name;
-
+  console.log()
   return (
       <S.ContainerDiv>
         <Header/>
