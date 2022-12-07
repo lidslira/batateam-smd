@@ -5,4 +5,5 @@ export interface AreasProps {
   hasSpecialBg?: boolean;
   children: React.ReactElement;
   isImageLeft?: boolean;
+  image?: string;
 }

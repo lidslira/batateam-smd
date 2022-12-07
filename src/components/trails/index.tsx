@@ -31,7 +31,7 @@ function TrailsComponent(props: TrailsProps): ReactElement {
     <S.Container hasSpecialBg={props.hasSpecialBg}>
       <div>
         <S.Sidebar>
-        { props.isImageLeft && <S.Image isImageLeft/> }
+        { props.isImageLeft && <S.ImageContainer isImageLeft><S.Image src={props.image}/>  </S.ImageContainer> }
           <S.Section>
           <h1>{props.title}</h1>
           { props.navigateToCourses && <S.Button className="button" onClick={() => navigate(`/${props.navigateToCourses}`)}> Ver Cadeiras &gt; </S.Button> }
@@ -43,7 +43,7 @@ function TrailsComponent(props: TrailsProps): ReactElement {
               })}
           </ul> }
         </S.Section>
-        { !props.isImageLeft && <S.Image /> }
+        { !props.isImageLeft && <S.ImageContainer><S.Image src={props.image}/>  </S.ImageContainer> }
         </S.Sidebar>
       </div>
     </S.Container>

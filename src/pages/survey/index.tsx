@@ -4,22 +4,27 @@ import Footer from '../../components/footer';
 import Header  from '../../components/header';
 import * as S from './styles';
 import AreasComponent from '../../components/areas';
+import SurveyLogo from '../../assets/survey-inicio.png';
 
-function Home(): ReactElement {
+function Survey(): ReactElement {
   const navigate = useNavigate();
+  const [name, setName] = useState<string>('');
+
   return (
     <S.ContainerDiv>
       <Header/>
         <S.Container>
         <S.AreaSection id="survey" >
             <AreasComponent
+              image={SurveyLogo} 
               hasSpecialBg
               title={'Teste de Afinidade'}
               subtitle={'Duração média: '}
               description={'Nesse teste você vai poder classificar seu nível de interesse em atividades que são exercidas pelas quatro trilhas. Utilize esse resultado para se orientar na escolha da sua jornada no curso!'}
               children= {
                 <>
-                <S.Button onClick={() => navigate('/survey-questoes')}>Começar</S.Button>
+                <S.Input required type="text" placeholder="Digite seu nome" onChange={e => setName(e.target.value)}></S.Input>
+                <S.Button type='submit' onClick={() => navigate('/survey-questoes')}>Começar</S.Button>
                 </>
               }/>
           </S.AreaSection>
@@ -29,4 +34,4 @@ function Home(): ReactElement {
   );
 }
 
-export default Home;
+export default Survey;

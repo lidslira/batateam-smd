@@ -17,4 +17,5 @@ export const Container = styled.div`
 export const AreaSection = styled.section`
   margin-top: 20px;
   width: 100%;
+  margin-left: 20px;
 `;

@@ -1,13 +1,14 @@
 import { ReactElement, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as S from './styles';
+import WelcomeLogo from '../../assets/tela-boas-vindas.png';
 
 function Welcome(): ReactElement {
   const navigate = useNavigate();
 
   return (
     <S.Container>
-      <S.Image />
+      <S.ImageContainer><S.Image src={WelcomeLogo}/>  </S.ImageContainer>
       <S.Sidebar>
         <S.Section>
         <h1>Bem vindo(a)!</h1>

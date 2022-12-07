@@ -7,4 +7,5 @@ export interface TrailsProps {
   children?: React.ReactElement;
   isImageLeft?: boolean;
   hasList?: boolean;
+  image?: string;
 }

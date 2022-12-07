@@ -80,15 +80,20 @@ export const Section = styled.section`
   }
 `;
 
-export const Image = styled.div<ImageProps>`
+export const ImageContainer = styled.div<ImageProps>`
   display: flex;
-  max-height: 400px;
-  height: 350px;
+  height: 400px;
   width: 100%;
+  justify-content: center;
   margin: ${({ isImageLeft }) => isImageLeft ? `0px 30px 0px 0px` : '0px 0px 0px 30px'};
   max-width: 300px;
   padding: 0px 3px 0px 3px;
   border: 2px dashed black;
+`;
+
+export const Image = styled.img`
+  height: 105%;
+  align-items: center;
 `;
 
 export const Button = styled.button`

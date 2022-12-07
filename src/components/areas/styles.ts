@@ -14,12 +14,15 @@ export const Container = styled.main<ContainerProps>`
   display: flex;
   align-items: center;
   margin: 0px 0px 0px 0px;
-  padding: 15px 10px 15px 10px;
+  padding: 15px 10px 15px 30px;
   padding-bottom: 10px;
   flex-direction: column;
 
   background-color: ${({ hasSpecialBg }) => hasSpecialBg ? '#F1EDE6' : '#fff'};
 
+  @media ${device.mobile} {
+    padding: 15px 0px 100px 50px;
+  }
 `;
 
 export const Sidebar = styled.div`
@@ -64,7 +67,7 @@ export const Section = styled.section`
     line-height: 1.8rem;
 
     @media (${device.mobile}) {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
 
@@ -73,12 +76,25 @@ export const Section = styled.section`
   }
 `;
 
-export const Image = styled.div<ImageProps>`
+export const ImageContainer = styled.div<ImageProps>`
   display: flex;
   height: 400px;
   width: 100%;
+  justify-content: center;
   margin: ${({ isImageLeft }) => isImageLeft ? `0px 30px 0px 0px` : '0px 0px 0px 30px'};
   max-width: 300px;
   padding: 0px 3px 0px 3px;
   border: 2px dashed black;
+
+  @media ${device.mobile} {
+    height: 350px;
+    width: 200px;
+    margin: 0px 0px 0px 10px;
+  }
+`;
+
+
+export const Image = styled.img`
+  height: 105%;
+  align-items: center;
 `;

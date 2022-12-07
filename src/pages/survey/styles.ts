@@ -66,3 +66,9 @@ export const Button = styled.button`
     background: #93AABA;
   }
 `;
+
+export const Input = styled.input`
+  height: 20px;
+  border-radius: 10px;
+  padding: 10px;
+`;

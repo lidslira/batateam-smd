@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../constants/breakpoints';
 
 interface DotProps {
   isActive: boolean;
@@ -11,6 +12,9 @@ export const Container = styled.main`
   min-height: 100vh;
   margin: 0px 0px 0px 20px;
   padding: 5px;
+  @media ${device.mobile} {
+    margin: 0px 20px 0px 20px;
+  }
 `;
 
 export const Sidebar = styled.div`
@@ -39,7 +43,7 @@ export const Button = styled.button`
 
   max-height: 53px;
 
-  margin: 20px 0px 20px 50px;
+  margin: 20px 0px 20px 0px;
 
   font-size: 1.25rem;
   font-family: 'Poppins', sans-serif;
@@ -62,6 +66,10 @@ export const Section = styled.section`
     word-wrap: break-word;    
     font-size: 2.5rem;
     margin-bottom: 20px;
+    
+    @media ${device.mobile} {
+      font-size: 2rem;
+    }
   }
 
   p {
@@ -70,15 +78,30 @@ export const Section = styled.section`
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.8rem;
+   
+    @media ${device.mobile} {
+      font-size: 0.9rem;
+    }
   }
 `;
 
-export const Image = styled.div`
+export const ImageContainer = styled.div`
   display: flex;
   height: 400px;
   width: 100%;
-  margin: 0px 15px 0px 0px;
+  justify-content: center;
+  margin: 0px 45px 0px 0px;
   max-width: 200px;
   padding: 0px 3px 0px 3px;
   border: 2px dashed black;
+
+  @media ${device.mobile} {
+    height: 350px;
+    margin: 0px 25px 0px 0px;
+  }
+`;
+
+export const Image = styled.img`
+  height: 105%;
+  align-items: center;
 `;

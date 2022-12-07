@@ -10,7 +10,7 @@ function AreasComponent(props: AreasProps): ReactElement {
     <S.Container hasSpecialBg={props.hasSpecialBg}>
       <div>
         <S.Sidebar>
-        { props.isImageLeft && <S.Image isImageLeft/> }
+        { props.isImageLeft && <S.ImageContainer isImageLeft><S.Image src={props.image}/>  </S.ImageContainer>}
           <S.Section>
           <h1>{props.title}</h1>
           <h2>{props.subtitle}</h2>
@@ -19,7 +19,7 @@ function AreasComponent(props: AreasProps): ReactElement {
             {props.children}
           </S.ButtonContainer>
         </S.Section>
-        { !props.isImageLeft && <S.Image /> }
+        { !props.isImageLeft && <S.ImageContainer> <S.Image src={props.image}/>  </S.ImageContainer>}
         </S.Sidebar>
       </div>
     </S.Container>
