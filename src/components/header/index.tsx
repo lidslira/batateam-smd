@@ -101,11 +101,11 @@ function Navbar() {
             <AiOutlineClose onClick={menuToggleHandler} />
           )}
         </div>
-        <input className="input-field" type="search" aria-label="Search">
+        {/* <input className="input-field" type="search" aria-label="Search"> */}
             {/* <div className="input-icon">
               <BiSearchAlt2/> 
             </div> */}
-        </input>
+        {/* </input> */}
       </div>
     </header>
   )

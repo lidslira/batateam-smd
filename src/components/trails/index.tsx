@@ -10,7 +10,7 @@ function TrailsComponent(props: TrailsProps): ReactElement {
  
   useEffect(() => {
     disciplinas.map((item) => { //CONTINUAR DEPOIS
-      switch(props.title) {
+      switch(item.title || props.title) {
         case 'Animação e Audiovisual':
           setDisciplinasEscolhidas(disciplinas[0].list);
           break;
@@ -25,7 +25,7 @@ function TrailsComponent(props: TrailsProps): ReactElement {
           break;
       }
     });
-  }),[disciplinas, props, props.title, disciplinasEscolhidas]
+  }),[disciplinas, props.title, disciplinasEscolhidas]
 
   return (
     <S.Container hasSpecialBg={props.hasSpecialBg}>

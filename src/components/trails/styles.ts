@@ -40,7 +40,7 @@ export const Section = styled.section`
     margin-bottom: 10px;
 
     @media (${device.mobile}) {
-      font-size: 2rem;
+      font-size: 1.9rem;
     }
   }
 
@@ -60,7 +60,7 @@ export const Section = styled.section`
     line-height: 1.7rem;
 
     @media (${device.mobile}) {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
 
@@ -78,17 +78,24 @@ export const Section = styled.section`
   div {
     flex-direction: row;
   }
+
+  @media (${device.mobile}) {
+    margin: 10px 0px 10px 40px;
+  }
 `;
 
 export const ImageContainer = styled.div<ImageProps>`
   display: flex;
   height: 400px;
-  width: 100%;
+  /* width: 100%; */
   justify-content: center;
   margin: ${({ isImageLeft }) => isImageLeft ? `0px 30px 0px 0px` : '0px 0px 0px 30px'};
   max-width: 300px;
   padding: 0px 3px 0px 3px;
   border: 2px dashed black;
+  @media (${device.mobile}) {
+    width: 250px;
+  }
 `;
 
 export const Image = styled.img`

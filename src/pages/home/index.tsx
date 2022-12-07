@@ -5,6 +5,11 @@ import Footer from '../../components/footer';
 import Header  from '../../components/header';
 import homeAreas  from '../../constants/homeAreas';
 import * as S from './styles';
+import Placas from '../../assets/placasInicial.png';
+import Disciplinas from '../../assets/Mapa.png';
+import Bussula from '../../assets/bussulainterf.png';
+import Binoculo from '../../assets/binoculo.png';
+
 
 function Home(): ReactElement {
   const navigate = useNavigate();
@@ -15,6 +20,7 @@ function Home(): ReactElement {
 
           <S.AreaSection id="trilhas" >
             <AreasComponent
+              image={Placas}
               title={homeAreas[0].title}
               description={homeAreas[0].description}
               children= {
@@ -28,7 +34,8 @@ function Home(): ReactElement {
           </S.AreaSection>
 
           <S.AreaSection id="disciplinas" >
-            <AreasComponent 
+            <AreasComponent
+              image={Disciplinas}
               hasSpecialBg
               isImageLeft
               title={homeAreas[1].title}
@@ -44,17 +51,19 @@ function Home(): ReactElement {
 
           <S.AreaSection id="teste-afinidade" >
             <AreasComponent
+              image={Bussula}
               title={homeAreas[2].title}
               description={homeAreas[2].description}
               children= {
                 <>
-                <S.Button onClick={() => navigate('/teste-afinidade')}>Acessar</S.Button>
+                <S.Button onClick={() => navigate('/survey')}>Acessar</S.Button>
                 </>
               }/>
           </S.AreaSection>
 
           <S.AreaSection id="faq" >
             <AreasComponent
+              image={Binoculo}
               hasSpecialBg
               isImageLeft
               title={homeAreas[3].title}

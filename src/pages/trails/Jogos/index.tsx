@@ -19,7 +19,7 @@ function Jogos(): ReactElement {
             <TrailsComponent
               image={Jogos1}
               title={'Jogos Digitais'}
-              navigateToCourses={'disciplinas-jogos'}
+              // navigateToCourses={'disciplinas-jogos'}
               subtitle={'Objetivo'}
               description={'Apresentar uma visão integrada do desenvolvimento de jogos (e aplicações interativas em geral), em uma perspectiva multirreferencial, contemplando computação, arte e cultura.'}
             />

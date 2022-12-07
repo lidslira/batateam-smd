@@ -48,7 +48,7 @@ export const Button = styled.button`
   color: #000;
   box-shadow: 1px 1px 5px #000;
 
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,6 +69,7 @@ export const Button = styled.button`
 
 export const Input = styled.input`
   height: 20px;
+  margin: 15px 0px 10px 0px;
   border-radius: 10px;
   padding: 10px;
 `;

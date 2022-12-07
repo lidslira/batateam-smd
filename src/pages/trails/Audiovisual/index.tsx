@@ -19,7 +19,7 @@ function Audiovisual(): ReactElement {
             <TrailsComponent
               image={Ani1}
               title={'Animação e Audiovisual'}
-              navigateToCourses={'disciplinas-audiovisual'}
+              // navigateToCourses={'disciplinas-audiovisual'}
               subtitle={'Objetivo'}
               description={'Capacitar os estudantes em diferentes meios de comunicação, usando recursos multimidiáticos na produção de recursos práticos, sendo eles formas de expressão e ferramentas de linguagem.'}
             />

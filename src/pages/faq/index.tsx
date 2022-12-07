@@ -24,7 +24,7 @@ function Home(): ReactElement {
             <p>O que são as trilhas?</p>
         </S.QuestionContainer>
         { question1Open && <S.AnswerContainer>
-          <p> As trilhas lskjdklsjdlksjdlksjdlkjsdlkjsdlkjlsd </p>
+          <p> São um conjunto de cadeiras optativas separadas por áreas. Elas servem como sugestões de quais disciplinas você pode cursar dependendo do seu interesse. </p>
         </S.AnswerContainer> }
 
         <S.QuestionContainer>
@@ -39,19 +39,19 @@ function Home(): ReactElement {
         <S.QuestionContainer>
         { !question3Open ? 
             <FiChevronRight size={20} onClick={() => setQuestion3Open(true)}/> : <FiChevronUp size={20} onClick={() => setQuestion3Open(false)}/> } 
-            <p>Todas as cadeiras optativas fazem parte de alguma trilha?</p>
+            <p>Quando posso começar a cursar alguma trilha?</p>
         </S.QuestionContainer>
         { question3Open && <S.AnswerContainer>
-          <p>Não. As trilhas servem somente como uma sugestão de disciplinas optativas que você pode cursar ao longo da terceira etapa do curso (após os quatro primeiros semestres), mas ainda assim você é livre para escolher as disciplinas sem se preocupar em qual(is) trilha(s) elas fazem parte.</p>
+          <p>No Projeto Pedagógico é previsto que elas se iniciem a partir do quinto semestre do curso.</p>
         </S.AnswerContainer> }
 
         <S.QuestionContainer>
         { !question4Open ? 
             <FiChevronRight size={20} onClick={() => setQuestion4Open(true)}/> : <FiChevronUp size={20} onClick={() => setQuestion4Open(false)}/> } 
-            <p>Como as trilhas vão impactar na minha formação?</p>
+            <p>Posso misturar disciplinas de diferentes trilhas?</p>
         </S.QuestionContainer>
         { question4Open && <S.AnswerContainer>
-          <p>As trilha irão impactar..sdjlksjdlskjdlsdjsd</p>
+          <p>Sim. Você é livre para seguir quantas trilhas quiser. A ideia é que esses itinerários possam ajudar a guiar os estudantes em suas jornadas formativas, sem prendê-los a um único percurso. Caso queiram uma formação híbrida e generalista, os estudantes podem percorrer as múltiplas trilhas do curso.</p>
         </S.AnswerContainer> }
 
 

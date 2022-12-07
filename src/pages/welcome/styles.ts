@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 import { device } from '../../constants/breakpoints';
 
-interface DotProps {
-  isActive: boolean;
-}
-
 export const Container = styled.main`
   display: flex;
   justify-content: center;

@@ -34,6 +34,10 @@ export const Sidebar = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  
+  @media ${device.mobile} {
+    margin: 0px 0px 0px 40px;
+  }
 `;
 
 export const DotsContainer = styled.div`
@@ -123,14 +127,26 @@ export const Section = styled.section`
   }
 `;
 
-export const Image = styled.div`
+export const ImageContainer = styled.div`
   display: flex;
   height: 300px;
   width: 100%;
+  justify-content: center;
   margin: 0px 0px 0px 10px;
   max-width: 300px;
   padding: 0px 3px 0px 3px;
   border: 2px dashed black;
+
+  @media ${device.mobile} {
+    height: 350px;
+    width: 200px;
+    margin: 0px 0px 0px 10px;
+  }
+`;
+
+export const Image = styled.img`
+  height: 105%;
+  align-items: center;
 `;
 
 export const Skip = styled.div`

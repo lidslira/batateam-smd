@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../../constants/breakpoints';
 
 export const ContainerDiv = styled.main`
   width: 100%;
@@ -7,6 +8,13 @@ export const ContainerDiv = styled.main`
 export const AreaSection = styled.section`
   margin-top: 20px;
   width: 100%;
+  
+  .button {
+    display: flex;
+    align-items: center;
+    width: 92%;
+    justify-content: center;
+  }
 `;
 
 export const Container = styled.div`
@@ -52,8 +60,7 @@ export const Button = styled.button`
   color: #000;
   box-shadow: 1px 1px 5px #000;
 
-  width: 100%;
-  display: flex;
+  width: 10%;
   align-items: center;
   justify-content: center;
 
@@ -69,4 +76,7 @@ export const Button = styled.button`
   &:hover {
     background: #93AABA;
   }
+  @media ${device.mobile} {
+      width: 100%;
+    }
 `;
