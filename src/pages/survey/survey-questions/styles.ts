@@ -13,30 +13,34 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   margin-top: 40px;
-  align-items: center;
   min-height: 100vh;
   flex-direction: column;
+  padding: 20px;
+
+  fieldset.likertScale {
+  align-items: center;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 1em;
+  border-top: thin solid #D0BBAF;
+  border-bottom: thin solid #D0BBAF;
+  width: 90%;
+}
 
   h1 {
     font-family: 'Poppins', sans-serif;
     word-wrap: break-word;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 20px;
-  }
-
-  h2 {
-    font-family: 'Poppins', sans-serif;
-    word-wrap: break-word;
-    font-size: 1.2rem;
-    font-weight: normal;
-    margin: 15px 0px 25px 0px;
+    text-align: left;
   }
 
   p {
     font-family: 'Poppins', sans-serif;
     margin-bottom: 4px;
     font-weight: normal;
+    font-size: 1rem;
   }
 `;
 

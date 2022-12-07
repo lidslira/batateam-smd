@@ -24,7 +24,9 @@ function Survey(): ReactElement {
               children= {
                 <>
                 <S.Input required type="text" placeholder="Digite seu nome" onChange={e => setName(e.target.value)}></S.Input>
-                <S.Button type='submit' onClick={() => navigate('/survey-questoes')}>Começar</S.Button>
+                <S.Button type='submit' onClick={() => navigate('/survey-questoes', {
+                  state: { name: name }
+                })}>Começar</S.Button>
                 </>
               }/>
           </S.AreaSection>
