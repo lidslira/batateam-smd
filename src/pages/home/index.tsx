@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AreasComponent from '../../components/areas';
 import Footer from '../../components/footer';
@@ -9,10 +9,16 @@ import Placas from '../../assets/placasInicial.png';
 import Disciplinas from '../../assets/Mapa.png';
 import Bussula from '../../assets/bussulainterf.png';
 import Binoculo from '../../assets/binoculo.png';
+import disciplinas from '../../constants/disciplinas';
 
 
 function Home(): ReactElement {
   const navigate = useNavigate();
+  const animacao: string[] = disciplinas[0].list;
+  const design: string[] = disciplinas[1].list;
+  const jogos: string[] = disciplinas[2].list;
+  const sistemas: string[] = disciplinas[3].list;
+
   return (
     <S.ContainerDiv>
       <Header/>
@@ -25,10 +31,10 @@ function Home(): ReactElement {
               description={homeAreas[0].description}
               children= {
                 <>
-                <S.Button onClick={() => navigate('/audiovisual')}>Animação/Audiovisual</S.Button>
-                <S.Button onClick={() => navigate('/design')}>Design</S.Button>
-                <S.Button onClick={() => navigate('/jogos')}>Jogos</S.Button>
-                <S.Button onClick={() => navigate('/sistemas')}>Sistemas</S.Button>
+                <S.Button onClick={() => navigate('/audiovisual', {state: {disciplinasEscolhidas: animacao}})}>Animação/Audiovisual</S.Button>
+                <S.Button onClick={() => navigate('/design', {state: {disciplinasEscolhidas: design}})}>Design</S.Button>
+                <S.Button onClick={() => navigate('/jogos', {state: {disciplinasEscolhidas: jogos}})}>Jogos</S.Button>
+                <S.Button onClick={() => navigate('/sistemas', {state: {disciplinasEscolhidas: sistemas}})}>Sistemas</S.Button>
                 </>
               }/>
           </S.AreaSection>

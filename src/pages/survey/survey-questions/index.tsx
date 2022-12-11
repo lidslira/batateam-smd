@@ -129,7 +129,7 @@ const handleScore = () => {
     } if(question10 >= 75) {
       recomendations.push('Edição Audiovisual')
     } if(question12 >= 75) {
-      recomendations.push('Design Emocional, Teoria e Crítica do Design')
+      recomendations.push('Design Emocional', 'Teoria e Crítica do Design')
     } if(question13 >= 75) {
       recomendations.push('Concepção de Cenários e Personagens')
     }
@@ -146,7 +146,7 @@ const handleScore = () => {
             <h1>Perguntas</h1>
             <p>Olá{`${userName ? `, ${userName}` : ''}`}! Algumas informação sobre a escala likert: <br/><br/>Para responder às perguntas do Teste de Afinidade é preciso declarar a resposta em uma escala de 1 a 5 em que 1 mostra nenhum interesse e 5 muito interesse. </p>
           <S.AreaSection id="survey" >
-            <div id='Q1'>
+            <S.Questions>
               <Likert {...questions[0]}
                 // layout='stacked'
                 id='Q1'
@@ -156,7 +156,9 @@ const handleScore = () => {
                   handleRecomendations()
                 }}
               />
-            </div>
+            </S.Questions>
+
+            <S.Questions>
             <Likert {...questions[1]} 
               // layout='stacked'
               id='Q2'
@@ -164,82 +166,118 @@ const handleScore = () => {
               onClick={() => {
                 handleScore()
                 handleRecomendations()
-              }}            />
+              }}/>
+            </S.Questions>
+
+            <S.Questions>
             <Likert {...questions[2]} 
               // layout='stacked'
               onChange={onChange3}
               onClick={() => {
                 handleScore()
                 handleRecomendations()
-              }}            />
+              }}/>
+            </S.Questions>
+            
+            <S.Questions>
             <Likert {...questions[3]} 
               // layout='stacked'
               onChange={onChange4}
               onClick={() => {
                 handleScore()
                 handleRecomendations()
-              }}            />
+              }}/>
+            </S.Questions>
+
+            <S.Questions>
             <Likert {...questions[4]} 
               // layout='stacked'
               onChange={onChange5}
               onClick={() => {
                 handleScore()
                 handleRecomendations()
-              }}            />
+              }}/>
+            </S.Questions>
+            
+            <S.Questions>
             <Likert {...questions[5]} 
               // layout='stacked'
               onChange={onChange6}
               onClick={() => {
                 handleScore()
                 handleRecomendations()
-              }}            />
+              }}/>
+            </S.Questions>
+            
+            <S.Questions>
             <Likert {...questions[6]} 
               // layout='stacked'
               onChange={onChange7}
               onClick={() => {
                 handleScore()
                 handleRecomendations()
-              }}            />
+              }}/>
+            </S.Questions>
+            
+            <S.Questions>
             <Likert {...questions[7]} 
               // layout='stacked'
               onChange={onChange8}
               onClick={() => {
                 handleScore()
                 handleRecomendations()
-              }}            />
+              }}/>
+            </S.Questions>
+            
+            <S.Questions>
             <Likert {...questions[8]} 
               // layout='stacked'
               onChange={onChange9}
               onClick={() => handleScore()}
             />
+            </S.Questions>
+            
+            <S.Questions>
             <Likert {...questions[9]} 
               // layout='stacked'
               onChange={onChange10}
               onClick={() => {
                 handleScore()
                 handleRecomendations()
-              }}            />
+              }}/>
+            </S.Questions>
+            
+            <S.Questions>
             <Likert {...questions[10]} 
               // layout='stacked'
               onChange={onChange11}
               onClick={() => {
                 handleScore()
                 handleRecomendations()
-              }}            />
+              }}/>
+            </S.Questions>
+            
+            <S.Questions>
             <Likert {...questions[11]} 
               // layout='stacked'
               onChange={onChange12}
               onClick={() => {
                 handleScore()
                 handleRecomendations()
-              }}            />
+              }}/>
+            </S.Questions>
+            
+            <S.Questions>
             <Likert {...questions[12]} 
               // layout='stacked'
               onChange={onChange13}
               onClick={() => {
                 handleScore()
                 handleRecomendations()
-              }}            />
+              }}/>
+            </S.Questions>
+            
+            <S.Questions>
             <Likert {...questions[13]} 
               // layout='stacked'
               onChange={onChange14}
@@ -247,7 +285,8 @@ const handleScore = () => {
                 handleScore()
                 handleRecomendations()
                 removeDuplicates(recomendations);
-              }}            />
+              }}/>
+            </S.Questions>
 
             <div className="button"><S.Button type='submit' onClick={() => {
             handleScore();

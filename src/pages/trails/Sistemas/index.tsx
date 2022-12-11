@@ -20,7 +20,7 @@ function Sistemas(): ReactElement {
             <TrailsComponent
               image={Sis1}
               title={'Sistemas Multimídias'}
-              // navigateToCourses={'disciplinas-sistemas'}
+              navigateToCourses={'optativas'}
               subtitle={'Objetivo'}
               description={'Capacitar os alunos a analisar requisitos, projetar, implementar, testar, implantar, avaliar e manter sistemas computacionais para que atendam as necessidades do público alvo específico.'}
             />

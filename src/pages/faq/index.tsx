@@ -18,7 +18,7 @@ function Home(): ReactElement {
       <Header/>
         <S.Container>
          <h1>FAQ</h1>
-        <S.QuestionContainer>
+        <S.QuestionContainer onClick={() => question1Open ? setQuestion1Open(false) : setQuestion1Open(true)}>
           { !question1Open ? 
             <FiChevronRight size={20} onClick={() => setQuestion1Open(true)}/> : <FiChevronUp size={20} onClick={() => setQuestion1Open(false)}/> }
             <p>O que são as trilhas?</p>
@@ -27,7 +27,7 @@ function Home(): ReactElement {
           <p> São um conjunto de cadeiras optativas separadas por áreas. Elas servem como sugestões de quais disciplinas você pode cursar dependendo do seu interesse. </p>
         </S.AnswerContainer> }
 
-        <S.QuestionContainer>
+        <S.QuestionContainer onClick={() => question2Open ? setQuestion2Open(false) : setQuestion2Open(true)}>
         { !question2Open ? 
             <FiChevronRight size={20} onClick={() => setQuestion2Open(true)}/> : <FiChevronUp size={20} onClick={() => setQuestion2Open(false)}/> } 
             <p>Sou obrigado(a) a seguir alguma trilha?</p>
@@ -36,7 +36,7 @@ function Home(): ReactElement {
           <p>Não. As trilhas servem somente como uma sugestão de disciplinas optativas que você pode cursar ao longo da terceira etapa do curso (após os quatro primeiros semestres), mas ainda assim você é livre para escolher as disciplinas sem se preocupar em qual(is) trilha(s) elas fazem parte.</p>
         </S.AnswerContainer> }
 
-        <S.QuestionContainer>
+        <S.QuestionContainer onClick={() => question3Open ? setQuestion3Open(false) : setQuestion3Open(true)}>
         { !question3Open ? 
             <FiChevronRight size={20} onClick={() => setQuestion3Open(true)}/> : <FiChevronUp size={20} onClick={() => setQuestion3Open(false)}/> } 
             <p>Quando posso começar a cursar alguma trilha?</p>
@@ -45,7 +45,7 @@ function Home(): ReactElement {
           <p>No Projeto Pedagógico é previsto que elas se iniciem a partir do quinto semestre do curso.</p>
         </S.AnswerContainer> }
 
-        <S.QuestionContainer>
+        <S.QuestionContainer onClick={() => question4Open ? setQuestion4Open(false) : setQuestion4Open(true)}>
         { !question4Open ? 
             <FiChevronRight size={20} onClick={() => setQuestion4Open(true)}/> : <FiChevronUp size={20} onClick={() => setQuestion4Open(false)}/> } 
             <p>Posso misturar disciplinas de diferentes trilhas?</p>

@@ -38,9 +38,9 @@ function Explanation(): ReactElement {
       <S.ImageContainer ><S.Image src={TelaExplicacao1}/>  </S.ImageContainer>
       </S.Sidebar>
       <S.DotsContainer>
-        {!isFirst && <FiChevronLeft size={20} onClick={() => handleBackward()} /> }
+        {!isFirst && <FiChevronLeft size={25} onClick={() => handleBackward()} /> }
           {Pages.map((item, indexKey) => <S.Dot key={indexKey} isActive={item.index === index}/> )} 
-        { !isLast && <FiChevronRight size={20} onClick={() => handleFoward()} /> }
+        { !isLast && <FiChevronRight size={25} onClick={() => handleFoward()} /> }
         </S.DotsContainer>
         <S.Skip>
           <button type="submit" className="skip" onClick={() => navigate('/home')}>{isLast ? 'Começar' : 'Pular'}</button>

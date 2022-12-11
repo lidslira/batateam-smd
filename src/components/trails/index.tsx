@@ -1,31 +1,13 @@
 import { ReactElement, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import disciplinas from '../../constants/disciplinas';
 import * as S from './styles';
 import { TrailsProps } from './types';
 
 function TrailsComponent(props: TrailsProps): ReactElement {
   const navigate = useNavigate();
-  const [disciplinasEscolhidas, setDisciplinasEscolhidas] = useState<string[]>(disciplinas[0].list);
- 
-  useEffect(() => {
-    disciplinas.map((item) => { //CONTINUAR DEPOIS
-      switch(item.title || props.title) {
-        case 'Animação e Audiovisual':
-          setDisciplinasEscolhidas(disciplinas[0].list);
-          break;
-        case 'Design Digital Interativo':
-          setDisciplinasEscolhidas(disciplinas[1].list);
-          break;
-        case 'Jogos Digitais':
-          setDisciplinasEscolhidas(disciplinas[2].list);
-          break;
-        case 'Sistemas Multimídias':
-          setDisciplinasEscolhidas(disciplinas[3].list);
-          break;
-      }
-    });
-  }),[disciplinas, props.title, disciplinasEscolhidas]
+  const location = useLocation();
+  let disciplinasEscolhidas = location.state.disciplinasEscolhidas;
 
   return (
     <S.Container hasSpecialBg={props.hasSpecialBg}>

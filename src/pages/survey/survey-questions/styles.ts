@@ -52,6 +52,10 @@ export const Container = styled.div`
   }
 `;
 
+export const Questions = styled.div`
+  margin-bottom: 50px;
+`;
+
 export const Button = styled.button`
   border-radius: 4px;
   border: none;

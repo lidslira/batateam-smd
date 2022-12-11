@@ -19,7 +19,7 @@ function Survey(): ReactElement {
               image={SurveyLogo} 
               hasSpecialBg
               title={'Teste de Afinidade'}
-              subtitle={'Duração média: '}
+              subtitle={'Duração média: 5 min'}
               description={'Nesse teste você vai poder classificar seu nível de interesse em atividades que são exercidas pelas quatro trilhas. Utilize esse resultado para se orientar na escolha da sua jornada no curso!'}
               children= {
                 <>

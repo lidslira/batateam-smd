@@ -57,7 +57,7 @@ function Results(): ReactElement {
         </S.Sidebar>
       </S.Container>
       { recomendations.length > 0 && (<S.Recomendations> <p>Olá{`${userName ? `, ${userName}` : ''}`}!</p>
-        <p>Com base nas suas respostas, temos algumas cadeiras recomendadas:</p>
+        <p>Com base nas suas respostas, temos algumas <b>cadeiras recomendadas</b>:</p>
         <ul>
           { recomendations.map((item: string, index: number) => { 
             return <li key={index}>{item}</li>;

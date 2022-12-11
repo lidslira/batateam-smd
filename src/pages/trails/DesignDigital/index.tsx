@@ -20,7 +20,7 @@ function Design(): ReactElement {
             <TrailsComponent
               image={Design1}
               title={'Design Digital Interativo'}
-              // navigateToCourses={'disciplinas-design'}
+              navigateToCourses={'optativas'}
               subtitle={'Objetivo'}
               description={'Aprofundar os conhecimentos sobre as bases teóricas e práticas do design e do desenvolvimento de tecnologias digitais interativos adquiridos na formação básica inicial do curso.'}
             />
