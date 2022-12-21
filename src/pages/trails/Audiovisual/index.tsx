@@ -4,11 +4,10 @@ import Footer from '../../../components/footer';
 import Header  from '../../../components/header';
 import * as S from './styles';
 import Ani1 from '../../../assets/trilha-ani-1.png';
-import Ani2 from '../../../assets/trilha-ani-2.png';
-import Ani3 from '../../../assets/trilha-ani-3.png';
 import Ani4 from '../../../assets/trilha-ani-4.png';
 import Ani5 from '../../../assets/trilha-ani-5.png';
 import upBottom from '../../../assets/up-bottom.png';
+import bg from '../../../assets/trilhas-bg.png';
 
 
 function Audiovisual(): ReactElement {
@@ -24,6 +23,11 @@ function Audiovisual(): ReactElement {
   return (
     <S.ContainerDiv>
       <Header/>
+      {/* <>
+          <div style={{ position: 'fixed', bottom: 0, left: 0, zIndex: 0, objectFit: 'contain'}}>
+            <img src={bg} alt="" loading="eager" height='850' width='1500'/>
+          </div>
+        </> */}
         <S.Container>
         <div onClick={() => scrollTo()} style={{ cursor: 'pointer', position: 'fixed', right: 50, bottom: 30, zIndex: 1 }}>
             <img src={upBottom} alt="" loading="eager" height='80' width='80'/>

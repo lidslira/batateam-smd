@@ -8,6 +8,7 @@ import Footer from '../../../components/footer';
 import Header  from '../../../components/header';
 import * as S from './styles';
 import questions from '../../../constants/surveyQuestions';
+import bg from '../../../assets/survey-bg.png';
 
 function SurveyQuestions() {
   const navigate = useNavigate();
@@ -44,59 +45,45 @@ function SurveyQuestions() {
   
   const onChange1 = (chosen: any) => {
     setQuestion1(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange2 = (chosen: any) => {
     setQuestion2(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange3 = (chosen: any) => {
     setQuestion3(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange4 = (chosen: any) => {
     setQuestion4(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange5 = (chosen: any) => {
     setQuestion5(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange6 = (chosen: any) => {
     setQuestion6(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange7 = (chosen: any) => {
     setQuestion7(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange8 = (chosen: any) => {
     setQuestion8(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange9 = (chosen: any) => {
     setQuestion9(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange10 = (chosen: any) => {
     setQuestion10(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange11 = (chosen: any) => {
     setQuestion11(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange12 = (chosen: any) => {
     setQuestion12(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange13 = (chosen: any) => {
     setQuestion13(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
   const onChange14 = (chosen: any) => {
     setQuestion14(chosen.value);
-    console.log(`\n\nVALOR ESCOLHIDO: `, chosen.value)
   };
 
 const handleScore = () => {
@@ -133,21 +120,29 @@ const handleScore = () => {
       recomendations.push('Concepção de Cenários e Personagens')
     }
   }
-  console.log(recomendations)
+
   function removeDuplicates(arr: any[]) {
     return arr.filter((item: any, index: any) => arr.indexOf(item) === index);
-}
+  }
   removeDuplicates(recomendations);
+
+  
+
   return (
       <S.ContainerDiv>
         <Header/>
           <S.Container>
-            <h1>Perguntas</h1>
-            <p>Olá{`${userName ? `, ${userName}` : ''}`}! Algumas informações sobre a escala likert: <br/><br/>Para responder às perguntas do Teste de Afinidade é preciso declarar a resposta em uma escala de 1 a 5 em que 1 mostra nenhum interesse e 5 muito interesse. </p>
+          {/* <>
+            <div style={{ position: 'fixed', bottom: 0, left: 0, zIndex: 0, objectFit: 'contain'}}>
+              <img src={bg} alt="" loading="eager" height={`${window.screen.height}-50`} width={`${window.screen.width}`}/>
+            </div>
+          </> */}
+            <h1>Teste de Afinidade</h1>
+            <p>Responda as perguntas abaixo para encontrar seu nível de afinidade com as diferentes trilhas do curso</p>
           <S.AreaSection id="survey" >
             <S.Questions>
               <Likert {...questions[0]}
-                // layout='stacked'
+                layout='stacked'
                 id='Q1'
                 onChange={onChange1}
                 onClick={() => {
@@ -159,7 +154,7 @@ const handleScore = () => {
 
             <S.Questions>
             <Likert {...questions[1]} 
-              // layout='stacked'
+              layout='stacked'
               id='Q2'
               onChange={onChange2}
               onClick={() => {
@@ -170,7 +165,7 @@ const handleScore = () => {
 
             <S.Questions>
             <Likert {...questions[2]} 
-              // layout='stacked'
+              layout='stacked'
               onChange={onChange3}
               onClick={() => {
                 handleScore()
@@ -180,7 +175,7 @@ const handleScore = () => {
             
             <S.Questions>
             <Likert {...questions[3]} 
-              // layout='stacked'
+              layout='stacked'
               onChange={onChange4}
               onClick={() => {
                 handleScore()
@@ -190,7 +185,7 @@ const handleScore = () => {
 
             <S.Questions>
             <Likert {...questions[4]} 
-              // layout='stacked'
+              layout='stacked'
               onChange={onChange5}
               onClick={() => {
                 handleScore()
@@ -200,7 +195,7 @@ const handleScore = () => {
             
             <S.Questions>
             <Likert {...questions[5]} 
-              // layout='stacked'
+              layout='stacked'
               onChange={onChange6}
               onClick={() => {
                 handleScore()
@@ -210,7 +205,7 @@ const handleScore = () => {
             
             <S.Questions>
             <Likert {...questions[6]} 
-              // layout='stacked'
+              layout='stacked'
               onChange={onChange7}
               onClick={() => {
                 handleScore()
@@ -220,7 +215,7 @@ const handleScore = () => {
             
             <S.Questions>
             <Likert {...questions[7]} 
-              // layout='stacked'
+              layout='stacked'
               onChange={onChange8}
               onClick={() => {
                 handleScore()
@@ -230,7 +225,7 @@ const handleScore = () => {
             
             <S.Questions>
             <Likert {...questions[8]} 
-              // layout='stacked'
+              layout='stacked'
               onChange={onChange9}
               onClick={() => handleScore()}
             />
@@ -238,7 +233,7 @@ const handleScore = () => {
             
             <S.Questions>
             <Likert {...questions[9]} 
-              // layout='stacked'
+              layout='stacked'
               onChange={onChange10}
               onClick={() => {
                 handleScore()
@@ -248,7 +243,7 @@ const handleScore = () => {
             
             <S.Questions>
             <Likert {...questions[10]} 
-              // layout='stacked'
+              layout='stacked'
               onChange={onChange11}
               onClick={() => {
                 handleScore()
@@ -258,7 +253,7 @@ const handleScore = () => {
             
             <S.Questions>
             <Likert {...questions[11]} 
-              // layout='stacked'
+              layout='stacked'
               onChange={onChange12}
               onClick={() => {
                 handleScore()
@@ -268,7 +263,7 @@ const handleScore = () => {
             
             <S.Questions>
             <Likert {...questions[12]} 
-              // layout='stacked'
+              layout='stacked'
               onChange={onChange13}
               onClick={() => {
                 handleScore()
@@ -278,7 +273,7 @@ const handleScore = () => {
             
             <S.Questions>
             <Likert {...questions[13]} 
-              // layout='stacked'
+              layout='stacked'
               onChange={onChange14}
               onClick={() => {
                 handleScore()
@@ -287,18 +282,22 @@ const handleScore = () => {
               }}/>
             </S.Questions>
 
-            <div className="button"><S.Button type='submit' onClick={() => {
-            handleScore();
-            navigate('/survey-resultados', {
-                  state: { 
-                    name: userName,
-                    audiovisual: audiovisual,
-                    jogos: jogos,
-                    sistemas: sistemas,
-                    design: design,
-                    recomendations: removeDuplicates(recomendations)
-                  }
-            })}}>Enviar</S.Button>
+            <div className="button">
+              <S.Button isCancel type='submit' onClick={() => navigate('/home')}>Cancelar Teste</S.Button>
+            
+              <S.Button type='submit' onClick={() => {
+                  handleScore()
+                  handleRecomendations()            
+                  navigate('/survey-resultados', {
+                    state: { 
+                      name: userName,
+                      audiovisual: audiovisual,
+                      jogos: jogos,
+                      sistemas: sistemas,
+                      design: design,
+                      recomendations: removeDuplicates(recomendations)
+                    }
+              })}}>Ver Resultados</S.Button>
             </div>
           </S.AreaSection>
         </S.Container>

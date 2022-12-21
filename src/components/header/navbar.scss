@@ -17,7 +17,7 @@
 .header {
   background: #87B296;
 //   width: 100%;
-  z-index: 2;
+  z-index: 1000;
   height: 80px;
   padding: 0 1.5rem;
   @include breakpoint(md) {
@@ -67,7 +67,7 @@
 
     &__img {
         max-width: fit-content;
-        width: 200px;
+        width: 150px;
     }
 
       &__nav {
@@ -149,6 +149,7 @@
               display: flex;
               flex-direction: column;
               margin-bottom: 32px;
+              margin-right: 30px;
               text-align: center;
             @include breakpoint(md) {
                 flex-direction: row;
@@ -156,6 +157,7 @@
                 align-items: center;
                 margin-bottom: 0;
                 margin-right: calc(0.5rem + #{16px});
+                // margin-right: 30px;
             }
             li {
               font-family: 'Poppins', sans-serif;

@@ -4,7 +4,7 @@ import { BsFillCaretDownFill, BsFillCaretRightFill } from "react-icons/bs";
 import Footer from '../../components/footer';
 import Header  from '../../components/header';
 import homeAreas  from '../../constants/homeAreas';
-import vector1 from '../../assets/manchas-tela.png';
+import bg from '../../assets/faq-bg.png';
 
 import * as S from './styles';
 
@@ -19,8 +19,8 @@ function Home(): ReactElement {
     <S.ContainerDiv>
       <Header/>
         <>
-          <div style={{ position: 'fixed', bottom: 0, left: 0, zIndex: -1, objectFit: 'fill'}}>
-            <img src={vector1} alt="" loading="eager" height='850' width='1500'/>
+          <div style={{ position: 'fixed', bottom: 0, left: 0, zIndex: -1, objectFit: 'contain'}}>
+            <img src={bg} alt="" loading="eager" height={`${window.screen.height}`} width={`${window.screen.width}`}/>
           </div>
         </>
         <S.Container>
