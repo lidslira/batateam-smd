@@ -22,7 +22,7 @@ export const Container = styled.main<ContainerProps>`
   padding-bottom: 10px;
   flex-direction: column;
 
-  background-color: ${({ hasSpecialBg }) => hasSpecialBg ? '#F8F8F8' : '#fff'};
+  background-color: ${({ hasSpecialBg }) => hasSpecialBg ? 'rgba(211,211,211, 0.2)' : null};
 
   @media ${device.mobile} {
     padding: 15px 0px 100px 50px;

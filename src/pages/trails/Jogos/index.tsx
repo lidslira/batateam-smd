@@ -7,7 +7,7 @@ import Jogos1 from '../../../assets/trilha-jog-1.png';
 import Jogos4 from '../../../assets/trilha-jog-4.png';
 import Jogos5 from '../../../assets/trilha-jog-5.png';
 import upBottom from '../../../assets/up-bottom.png';
-
+import bg from '../../../assets/faq-bg.png';
 
 function Jogos(): ReactElement {
 
@@ -23,6 +23,12 @@ function Jogos(): ReactElement {
     <S.ContainerDiv>
       <Header/>
         <S.Container>
+        <>
+          <div style={{ position: 'fixed', bottom: 0, left: 0, zIndex: -1, objectFit: 'fill'}}>
+            <img src={bg} alt="" loading="eager" height={`${window.screen.height}`} width={`${window.screen.width}`}/>
+          </div>
+        </>
+
           <div onClick={() => scrollTo()} style={{ cursor: 'pointer', position: 'fixed', right: 50, bottom: 30, zIndex: 1 }}>
             <img src={upBottom} alt="" loading="eager" height='80' width='80'/>
           </div>
@@ -50,8 +56,6 @@ function Jogos(): ReactElement {
           <S.AreaSection >
             <TrailsComponent
               image={Jogos5}
-              hasSpecialBg
-              isImageLeft
               navigateBack
               subtitle={'Mercado de Trabalho: '}
               description={'A pessoa que faz essa trilha tem interesse em exercer atividades de game designer, programador, animador, designer de personagem, designer de cenário, level designer, tester e produtor executivo.'}

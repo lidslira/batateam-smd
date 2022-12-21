@@ -9,6 +9,7 @@ import * as S from './styles';
 import Placas from '../../assets/placasInicial.png';
 import Survey from '../../assets/survey-inicio.png';
 import upBottom from '../../assets/up-bottom.png';
+import bg from '../../assets/faq-bg.png';
 
 
 function Home(): ReactElement {
@@ -30,9 +31,10 @@ function Home(): ReactElement {
     <S.ContainerDiv>
       <Header/>
         <>
-          {/* <div style={{ position: 'fixed', bottom: 0, left: 0, zIndex: 0, objectFit: 'fill'}}>
-            <img src={vector1} alt="" loading="eager" height='850' width='1500'/>
-          </div> */}
+          <div style={{ position: 'fixed', bottom: 0, left: 0, zIndex: -1, objectFit: 'fill'}}>
+            <img src={bg} alt="" loading="eager" height={`${window.screen.height}`} width={`${window.screen.width}`}/>
+          </div>
+
           <div onClick={() => scrollTo()} style={{ cursor: 'pointer', position: 'fixed', right: 50, bottom: 30, zIndex: 1 }}>
             <img src={upBottom} alt="" loading="eager" height='80' width='80'/>
           </div>

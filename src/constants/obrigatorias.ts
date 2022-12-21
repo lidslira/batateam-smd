@@ -5,16 +5,16 @@ export default [
       'Autoração Multimídia I',
       'Desenho I',
       'História do Design',
-      'Introdução à SMD',
-      'Programação I'
+      'Programação I',
+      'Introdução à Sistemas e Mídias Digitais',
     ],
   },
   {
     title: '2º Semestre',
     disciplinas: [
-      'Cognição e Tec. Digitais',
+      'Cognição e Tecnologias Digitais',
       'Comunicação Visual I',
-      'MAMI',
+      'Matemática Aplicada à Multimídia',
       'Narrativas Multimídia',
       'Programação II'
     ],
@@ -24,15 +24,15 @@ export default [
     disciplinas: [
       'Autoração Multimídia II',
       'Design de Interfaces Gráficas',
-      'Interação Humano-Computador',
+      'Projeto Integrado I',
       'Introdução à Cibercultura',
-      'Projeto Integrado I'
+      'Interação Humano-Computador',
     ],
   },
   {
     title: '4º Semestre',
     disciplinas: [
-      'Metodologia da Pesquisa Cient.',
+      'Metodologia de Pesquisa Científica',
     ],
   },
 ]

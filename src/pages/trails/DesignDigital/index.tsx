@@ -7,6 +7,7 @@ import Design1 from '../../../assets/trilha-des-1.png';
 import Design2 from '../../../assets/trilha-des-6.png';
 import Design3 from '../../../assets/trilha-des-3.png';
 import upBottom from '../../../assets/up-bottom.png';
+import bg from '../../../assets/faq-bg.png';
 
 function Design(): ReactElement {
 
@@ -22,6 +23,12 @@ function Design(): ReactElement {
     <S.ContainerDiv>
       <Header/>
         <S.Container>
+        <>
+          <div style={{ position: 'fixed', bottom: 0, left: 0, zIndex: -1, objectFit: 'fill'}}>
+            <img src={bg} alt="" loading="eager" height={`${window.screen.height}`} width={`${window.screen.width}`}/>
+          </div>
+        </>
+
           <div onClick={() => scrollTo()} style={{ cursor: 'pointer', position: 'fixed', right: 50, bottom: 30, zIndex: 1 }}>
             <img src={upBottom} alt="" loading="eager" height='80' width='80'/>
           </div>

@@ -7,7 +7,7 @@ import Sis1 from '../../../assets/dev.png';
 import Sis3 from '../../../assets/debug.png';
 import Sis4 from '../../../assets/trilha-jog-3.png';
 import upBottom from '../../../assets/up-bottom.png';
-
+import bg from '../../../assets/faq-bg.png';
 
 function Sistemas(): ReactElement {
 
@@ -23,6 +23,11 @@ function Sistemas(): ReactElement {
     <S.ContainerDiv>
       <Header/>
         <S.Container>
+        <>
+          <div style={{ position: 'fixed', bottom: 0, left: 0, zIndex: -1, objectFit: 'fill'}}>
+            <img src={bg} alt="" loading="eager" height={`${window.screen.height}`} width={`${window.screen.width}`}/>
+          </div>
+        </>
           <div onClick={() => scrollTo()} style={{ cursor: 'pointer', position: 'fixed', right: 50, bottom: 30, zIndex: 1 }}>
             <img src={upBottom} alt="" loading="eager" height='80' width='80'/>
           </div>

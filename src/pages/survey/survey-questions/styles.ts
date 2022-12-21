@@ -15,7 +15,7 @@ export const AreaSection = styled.section`
   width: 100%;
   align-items: center;
   z-index: -0;
-  background-color: #F8F8F8;
+  background-color: rgba(211,211,211, 0.2);
   
   .button {
     display: flex;

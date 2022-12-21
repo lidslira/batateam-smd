@@ -132,11 +132,11 @@ const handleScore = () => {
       <S.ContainerDiv>
         <Header/>
           <S.Container>
-          {/* <>
-            <div style={{ position: 'fixed', bottom: 0, left: 0, zIndex: 0, objectFit: 'contain'}}>
+          <>
+            <div style={{ position: 'fixed', bottom: 0, left: 0, zIndex: -1, objectFit: 'contain'}}>
               <img src={bg} alt="" loading="eager" height={`${window.screen.height}-50`} width={`${window.screen.width}`}/>
             </div>
-          </> */}
+          </>
             <h1>Teste de Afinidade</h1>
             <p>Responda as perguntas abaixo para encontrar seu nível de afinidade com as diferentes trilhas do curso</p>
           <S.AreaSection id="survey" >

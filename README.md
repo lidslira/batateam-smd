@@ -30,7 +30,7 @@
 
 <br>
 
-	O público-alvo da nossa aplicação é dividido em 2 grupos: Alunos do curso de Sistemas e Mídia Digitais que conhecem sobre a existência dos itinerários formativos e alunos (também do curso)  que não conhecem sobre a existência dos itinerários formativos. Para esses alunos seria de suma importância a existência de uma ferramenta que auxilie no direcionamento acerca da formação acadêmica oferecida pelas trilhas.
+O público-alvo da nossa aplicação é dividido em 2 grupos: Alunos do curso de Sistemas e Mídia Digitais que conhecem sobre a existência dos itinerários formativos e alunos (também do curso)  que não conhecem sobre a existência dos itinerários formativos. Para esses alunos seria de suma importância a existência de uma ferramenta que auxilie no direcionamento acerca da formação acadêmica oferecida pelas trilhas.
 
 <br>
 <br>
