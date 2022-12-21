@@ -64,12 +64,32 @@ export const Section = styled.section`
   }
 `;
 
+export const AreaSection = styled.section`
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgba(211,211,211, 0.2);
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    
+    @media ${device.mobile} {
+      font-size: 2rem;
+    }
+  }
+`;
+
+
 export const ImageContainer = styled.div`
   display: flex;
-  height: 400px;
+  height: 500px;
   width: 100%;
   justify-content: center;
-  margin: 0px 45px 0px 0px;
+  margin: 0px 100px 0px 100px;
   max-width: 200px;
   padding: 0px 3px 0px 3px;
   /* border: 2px dashed black; */
@@ -86,20 +106,7 @@ export const Image = styled.img`
 `;
 
 export const Recomendations = styled.div`
-  margin: -50px 30px 100px 130px;
 
-  p {
-    font-family: 'Poppins', sans-serif;
-    margin: 10px 0px 5px 0px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-  
-    @media ${device.mobile} {
-      font-size: 0.9rem;
-      margin: -60px 0px 100px -100px;
-    }
-  }
   ul {
     margin: 15px;
     @media ${device.mobile} {

@@ -103,5 +103,70 @@ export const ButtonGoBack = styled.button`
   background-color: #8BAB9A;
   padding: 15px;
   width: 300px;
+`;
 
+export const ButtonChangeTrail = styled.button`
+  display: flex;
+  font-size: 1.1rem;
+  margin: 10px 0px 20px 0px;
+  justify-content: center;
+  align-self: center;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #8BAB9A;
+  text-decoration: underline;
+
+  cursor: pointer;
+  
+  background-color: transparent;
+  border: none;
+`;
+
+export const Modal = styled.div`
+  position: fixed;
+  z-index: 1; 
+  padding-top: 300px; 
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+`;
+
+export const ModalContent = styled.div`
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 12px;
+  width: 30%;
+  align-items: center;
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    :hover{
+      color: #8BAB9A;
+      text-decoration: underline;
+    }
+  }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+.close:hover,
+.close:focus {
+  color: #8BAB9A;
+  text-decoration: none;
+  cursor: pointer;
+}
 `;

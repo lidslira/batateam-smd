@@ -1,13 +1,13 @@
 export default [
   {
-    title: 'Animação/Audiovisual',
+    title: 'Animação e Audiovisual',
     disciplinas: [
       'Educomunicação',
       'Ferramentas de Model. 3D I',
       'Ferramentas de Model. 3D II',
       'Laboratório de Criatividade',
       'Linguagem Audiovisual',
-      'PAPCEA',
+      'Prod. Audiovis. p/ Crianças e Adolescentes',
       'Produção Audiovisual',
       'Técnicas de animação 2D',
       'Técnicas de animação 3D I',
@@ -18,12 +18,12 @@ export default [
   {
     title: 'Design Digital',
     disciplinas: [
-      'Concepção de Cenários e Pers.',
+      'Concepção de Cenários e Personagens',
       'Computação Física',
       'Design Emocional',
-      'Experimento em Tipografia Dig.',
+      'Experimento em Tipografia Digital',
       'Instalações Multimídia',
-      'IHC II',
+      'Interação Humano-Computador II',
       'Laboratório de Criatividade',
       'Redação para Mídias Digitais',
       'Teoria e Crítica do Design',
@@ -32,7 +32,7 @@ export default [
   {
     title: 'Jogos Digitais',
     disciplinas: [
-      'Concepção de Cenários e Pers.',
+      'Concepção de Cenários e Personagens',
       'Cultura de Jogos',
       'Design de Jogos Digitais',
       'Inteligência Computacional',
@@ -44,15 +44,15 @@ export default [
     ]
   },
   {
-    title: 'Sistemas Multimídias',
+    title: 'Sistema Multimídia',
     disciplinas: [
       'Análise de Desempenho',
       'Computação Móvel e Ubíqua',
-      'Linguagem de Prog. Script',
-      'Prog. Orientada a Objeto',
-      'Prog. para Dispositivos Móveis',
-      'Prog. para Web I',
-      'Prog. para Web II',
+      'Linguagem de Programação Script',
+      'Programação Orientada a Objeto',
+      'Programação para Dispositivos Móveis',
+      'Programação para Web I',
+      'Programação para Web II',
       'Sistemas Distribuídos',
     ]
   },

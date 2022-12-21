@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { ReactElement, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../../components/footer';
 import Header  from '../../components/header';
@@ -8,6 +8,12 @@ import bg from '../../assets/faq-bg.png';
 import upBottom from '../../assets/up-bottom.png';
 
 function Optativas(): ReactElement {
+  const [audiovisual, setAudiovisual] = useState<boolean>(true);
+  const [jogos, setJogos] = useState<boolean>(false);
+  const [design, setDesign] = useState<boolean>(false);
+  const [sistemas, setSistemas] = useState<boolean>(false);
+  const [showModal, setShowModal] = useState<boolean>(false);
+
   const navigate = useNavigate();
   const scrollTo = () => {
     window.scroll({
@@ -17,6 +23,19 @@ function Optativas(): ReactElement {
     });
   }
 
+  const handleModal = () => {
+    setShowModal(!showModal);
+  }
+
+  const handleTrails = () => {
+    setShowModal(!showModal);
+    setAudiovisual(false);
+    setDesign(false);
+    setJogos(false)
+    setSistemas(false);
+    scrollTo();
+  }
+  
   return (
     <div>
       <Header/>
@@ -25,7 +44,31 @@ function Optativas(): ReactElement {
             <img src={bg} alt="" loading="eager" height={`${window.screen.height}`} width={`${window.screen.width}`}/>
           </div>
         </>
-
+      { showModal && <S.Modal>
+          <S.ModalContent>
+            <span className="close" onClick={() => handleModal()}>&times;</span>
+            <br/>
+            <p onClick={() => {
+              handleTrails();
+              setAudiovisual(true);
+            }}>Animação e Audiovisual</p>
+            <br/>
+            <p onClick={() => {
+              handleTrails();
+              setDesign(true);
+            }}> Design Digital</p>
+            <br/>
+            <p onClick={() => {
+              handleTrails();
+              setJogos(true);
+            }}>Jogos Digitais</p>
+            <br/>
+            <p onClick={() => {
+              handleTrails();
+              setSistemas(true);
+            }}>Sistemas Multimídias</p>
+          </S.ModalContent>
+      </S.Modal> }
         <S.Container>
         <div onClick={() => scrollTo()} style={{ cursor: 'pointer', position: 'fixed', right: 50, bottom: 30, zIndex: 1 }}>
             <img src={upBottom} alt="" loading="eager" height='80' width='80'/>
@@ -36,35 +79,36 @@ function Optativas(): ReactElement {
           </S.TextContainer>
         <div>
         <S.AreaSection>
-          <S.SemesterContainer>
+          { audiovisual && <S.SemesterContainer>
             <h2>{optativas[0].title}</h2>
               {optativas[0].disciplinas.map((element, index) => { 
                   return <S.Button index={index} key={index}>{element}</S.Button>
               })}  
-          </S.SemesterContainer>
+          </S.SemesterContainer>}
         
-          <S.SemesterContainer>
+          { design && <S.SemesterContainer>
             <h2>{optativas[1].title}</h2>
               {optativas[1].disciplinas.map((element, index) => { 
                   return <S.Button index={index} key={index}>{element}</S.Button>
               })}  
-          </S.SemesterContainer>
+          </S.SemesterContainer> }
         
-          <S.SemesterContainer>
+          { jogos && <S.SemesterContainer>
             <h2>{optativas[2].title}</h2>
               {optativas[2].disciplinas.map((element, index) => { 
                   return <S.Button index={index} key={index}>{element}</S.Button>
               })}  
-          </S.SemesterContainer>
+          </S.SemesterContainer> }
 
-          <S.SemesterContainer>
+          { sistemas && <S.SemesterContainer>
             <h2>{optativas[3].title}</h2>
               {optativas[3].disciplinas.map((element, index) => { 
                   return <S.Button index={index} key={index}>{element}</S.Button>
               })}
-          </S.SemesterContainer>
+          </S.SemesterContainer> }
         
         <S.ButtonGoBack onClick={() => navigate(`/home`)}> Voltar </S.ButtonGoBack>
+        <S.ButtonChangeTrail onClick={() => handleModal()}> Ver outra trilha </S.ButtonChangeTrail>
         </S.AreaSection>
         </div>
         </S.Container>

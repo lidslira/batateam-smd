@@ -6,6 +6,8 @@ import Header from '../../../components/header';
 import Footer  from '../../../components/footer';
 import ProgressBar from '../../../components/progressBar';
 import disciplinas from '../../../constants/disciplinas';
+import bg from '../../../assets/faq-bg.png';
+import binoculo from '../../../assets/binoculo.png';
 
 
 function Results(): ReactElement {
@@ -20,9 +22,7 @@ function Results(): ReactElement {
   
   const handleCompleted = (trilha: any, maxPoints: number) => {
     let result = parseFloat(((trilha/maxPoints)*100).toFixed(2));
-    // if(result >= 75) {
-    //   bestTrails.push(`${trilha}`);
-    // }
+
     if (result > 100) {
       return 100;
     } else return result;
@@ -44,26 +44,36 @@ function Results(): ReactElement {
     <div>
       <Header />
       <S.Container>
-        <S.ImageContainer><S.Image src={SurveyResultado}/>  </S.ImageContainer>
+      <>
+          <div style={{ position: 'fixed', bottom: 0, left: 0, zIndex: -1, objectFit: 'fill'}}>
+            <img src={bg} alt="" loading="eager" height={`${window.screen.height}`} width={`${window.screen.width}`}/>
+          </div>
+        </>
         <S.Sidebar>
           <S.Section>
           <h1>Resultados</h1>
           <div>
             {resultados.map((item, idx) => (
               <><p onClick={() => navigate(`/${item.navigateTo}`, {state: {disciplinasEscolhidas: item.list}})}>{item.title}</p><ProgressBar key={idx} completed={item.completed} /></>
-            ))}
+              ))}
           </div>        
         </S.Section>
         </S.Sidebar>
+        <S.ImageContainer><S.Image src={SurveyResultado}/>  </S.ImageContainer>
       </S.Container>
-      { recomendations.length > 0 && (<S.Recomendations> <p>Olá{`${userName ? `, ${userName}` : ''}`}!</p>
-        <p>Com base nas suas respostas, temos algumas <b>cadeiras recomendadas</b>:</p>
+        
+      { recomendations.length > 0 && (
+      <S.AreaSection>
+      <S.ImageContainer><S.Image src={binoculo}/>  </S.ImageContainer>
+      <S.Recomendations> <h2>Cadeiras Recomendadas</h2>
         <ul>
           { recomendations.map((item: string, index: number) => { 
             return <li key={index}>{item}</li>;
           })}
         </ul>
-      </S.Recomendations> )}
+      </S.Recomendations> 
+      </S.AreaSection>
+      )}
      <Footer/>
     </div> 
   );

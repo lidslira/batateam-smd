@@ -5,16 +5,18 @@ interface FillerStyleProps{
 }
 
 export const Container = styled.div`
-  height: 22px;
-  width: 200px;
-  background-color: #87B296;
+  height: 20px;
+  width: 300px;
+  background-color: #DCE4E3;
+  border-radius: 12px;
   margin-bottom: 20px;
   justify-content: center;
 `;
 
 export const Filler = styled.div<FillerStyleProps>`
   height: 100%;
-  background-color: #688CA5;
+  border-radius: 12px;
+  background-color: #87B295;
   text-align: right;
   transition: width 1s ease-in-out;
   width: ${({ width }) => `${width}%`};
@@ -22,7 +24,7 @@ export const Filler = styled.div<FillerStyleProps>`
 
 export const Span = styled.span`
   padding: 5px;
-  color: white;
+  color: #000;
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 `;
