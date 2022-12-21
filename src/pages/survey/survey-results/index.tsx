@@ -5,6 +5,7 @@ import SurveyResultado from '../../../assets/survey-resultado.png';
 import Header from '../../../components/header';
 import Footer  from '../../../components/footer';
 import ProgressBar from '../../../components/progressBar';
+import disciplinas from '../../../constants/disciplinas';
 
 
 function Results(): ReactElement {
@@ -16,12 +17,6 @@ function Results(): ReactElement {
   let jogos = location.state.jogos;
   let sistemas = location.state.sistemas;
   let design = location.state.design;
-
-
-  console.log(audiovisual);
-  console.log(jogos);
-  console.log(sistemas)
-  console.log(design);
   
   const handleCompleted = (trilha: any, maxPoints: number) => {
     let result = parseFloat(((trilha/maxPoints)*100).toFixed(2));
@@ -32,12 +27,17 @@ function Results(): ReactElement {
       return 100;
     } else return result;
   }
+
+  const animacaoList: string[] = disciplinas[0].list;
+  const designList: string[] = disciplinas[1].list;
+  const jogosList: string[] = disciplinas[2].list;
+  const sistemasList: string[] = disciplinas[3].list;
   
   const resultados = [
-    { title: 'Animação/Audiovisual >', completed: handleCompleted(audiovisual, 400), navigateTo: 'audiovisual' },
-    { title: 'Design Digital >', completed: handleCompleted(design, 400), navigateTo: 'design' },
-    { title: 'Jogos >', completed: handleCompleted(jogos, 400), navigateTo: 'jogos' },
-    { title: 'Sistemas >', completed: handleCompleted(sistemas, 400), navigateTo: 'sistemas' },
+    { title: 'Animação/Audiovisual >', completed: handleCompleted(audiovisual, 400), navigateTo: 'audiovisual', list: animacaoList },
+    { title: 'Design Digital >', completed: handleCompleted(design, 400), navigateTo: 'design', list: designList },
+    { title: 'Jogos >', completed: handleCompleted(jogos, 400), navigateTo: 'jogos', list: jogosList},
+    { title: 'Sistemas >', completed: handleCompleted(sistemas, 400), navigateTo: 'sistemas', list: sistemasList},
   ];
   console.log(recomendations)
   return (
@@ -50,7 +50,7 @@ function Results(): ReactElement {
           <h1>Resultados</h1>
           <div>
             {resultados.map((item, idx) => (
-              <><p onClick={() => navigate(`/${item.navigateTo}`)}>{item.title}</p><ProgressBar key={idx} completed={item.completed} /></>
+              <><p onClick={() => navigate(`/${item.navigateTo}`, {state: {disciplinasEscolhidas: item.list}})}>{item.title}</p><ProgressBar key={idx} completed={item.completed} /></>
             ))}
           </div>        
         </S.Section>

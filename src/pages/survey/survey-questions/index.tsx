@@ -10,10 +10,9 @@ import * as S from './styles';
 import questions from '../../../constants/surveyQuestions';
 
 function SurveyQuestions() {
-  // const refLikert = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
-  let userName = location.state.name;
+  let userName = location.state?.name;
   
   const [question1, setQuestion1] = useState(0);
   const [question2, setQuestion2] = useState(0);
@@ -144,7 +143,7 @@ const handleScore = () => {
         <Header/>
           <S.Container>
             <h1>Perguntas</h1>
-            <p>Olá{`${userName ? `, ${userName}` : ''}`}! Algumas informação sobre a escala likert: <br/><br/>Para responder às perguntas do Teste de Afinidade é preciso declarar a resposta em uma escala de 1 a 5 em que 1 mostra nenhum interesse e 5 muito interesse. </p>
+            <p>Olá{`${userName ? `, ${userName}` : ''}`}! Algumas informações sobre a escala likert: <br/><br/>Para responder às perguntas do Teste de Afinidade é preciso declarar a resposta em uma escala de 1 a 5 em que 1 mostra nenhum interesse e 5 muito interesse. </p>
           <S.AreaSection id="survey" >
             <S.Questions>
               <Likert {...questions[0]}

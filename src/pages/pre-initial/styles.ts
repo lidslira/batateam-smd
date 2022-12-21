@@ -15,7 +15,7 @@ export const Container = styled.main`
     border-radius: 8px;
     border: none;
 
-    background: #A8C2D3;
+    background: #87B296;
     box-shadow: 1px 1px 9px #000;
     color: #000;
 

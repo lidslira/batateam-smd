@@ -44,7 +44,7 @@ export const Button = styled.button`
   border-radius: 4px;
   border: none;
   padding: 10px;
-  background: #A8C2D3;
+  background: #87B296;
   color: #000;
   box-shadow: 1px 1px 5px #000;
 

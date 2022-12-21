@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
 export const ContainerDiv = styled.main`
-  width: 100%;
 `;
 
 export const Container = styled.div`
-  width: 100%;
   display: flex;
-  margin-top: 40px;
+  margin: 60px 300px 60px 300px;
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
@@ -15,9 +13,10 @@ export const Container = styled.div`
   h1 {
     font-family: 'Poppins', sans-serif;
     word-wrap: break-word;
-    font-weight: bold;
-    font-size: 1.8rem;
+    font-weight: 700;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    align-self: baseline;
   }
 
   h2 {
@@ -37,34 +36,38 @@ export const Container = styled.div`
 
 export const QuestionContainer = styled.div`
   display: flex;
-  background-color: #F1EDE6;
-  padding: 15px;
+  background-color: #DCE4E3;
+  border-radius: 12px;
+  padding: 15px 15px 15px 15px;
   width: 100%;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  margin: 0px 0px 20px 0px;
 
   p {
     font-family: 'Poppins', sans-serif;
-    margin: 0px 5px 0px 4px;
-    font-weight: 500;
+    margin: 5px 15px 5px 15px;
+    font-weight: 600;
+    color: #7E8281;
   }
 `;
 
 export const AnswerContainer = styled.div`
   display: flex;
-  background-color: #fff;
-  padding: 15px;
+  background-color: #DCE4E3;
+  border-radius: 12px;
+  padding: 15px 15px 15px 15px;
   width: 100%;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  margin-top: -10px;
+  margin: -35px 0px 20px 0px;
 
 
   p {
     font-family: 'Poppins', sans-serif;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 30px 0px 30px;
     font-size: 1rem;
+    font-weight: 300;
+    color: #7E8281;
   }
 `;

@@ -16,9 +16,10 @@ function TrailsComponent(props: TrailsProps): ReactElement {
         { props.isImageLeft && <S.ImageContainer isImageLeft><S.Image src={props.image}/>  </S.ImageContainer> }
           <S.Section>
           <h1>{props.title}</h1>
-          { props.navigateToCourses && <S.Button className="button" onClick={() => navigate(`/${props.navigateToCourses}`)}> Ver Cadeiras &gt; </S.Button> }
+          { props.navigateToCourses && <S.Button className="button" onClick={() => navigate(`/${props.navigateToCourses}`)}> Ver Disciplinas </S.Button> }
           <h2><b>{props.subtitle}</b></h2>
           <p>{props.description}</p>
+          <p>{props.description2}</p>
           { props.hasList && <ul>
               { disciplinasEscolhidas.map((item: string, index: number) => { 
                 return <li key={index}>{item}</li>;
@@ -28,6 +29,7 @@ function TrailsComponent(props: TrailsProps): ReactElement {
         { !props.isImageLeft && <S.ImageContainer><S.Image src={props.image}/>  </S.ImageContainer> }
         </S.Sidebar>
       </div>
+      { props.navigateBack && <S.ButtonGoBack onClick={() => navigate(`/home`)}> Voltar </S.ButtonGoBack> }
     </S.Container>
   );
 }

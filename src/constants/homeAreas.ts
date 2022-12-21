@@ -1,15 +1,15 @@
 export default [
   {
     title: 'Trilhas',
-    description: `Grupos de disciplinas optativas separadas por área`
+    description: `São grupos de disciplinas optativas separadas por área, previstas para se iniciar a partir do quinto semestre do curso.`
   },
   {
     title: 'Disciplinas',
-    description: `Começam a se especializar a partir do quarto semestre`
+    description: ``
   },
   {
     title: 'Teste de Afinidade',
-    description: `Encontre quais são suas trilhas de interesse`
+    description: `Teste feito para te ajudar a classificar seu nível de interesse em atividades que são exercidas pelas quatro trilhas. Utilize o resultado para se orientar na escolha da sua jornada no curso!`
   },
   {
     title: 'FAQ',

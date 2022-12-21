@@ -22,7 +22,9 @@ export default [
       'Interação Humano-Computador',
       'Teoria e Crítica do Design',
       'Webwritting',
-      'Instalações Multimídias'
+      'Instalações Multimídias',
+      'Tipografia Digital',
+      'Construção de Protótipos'
     ]
   },
   {
@@ -32,7 +34,9 @@ export default [
       'Pesquisa em Jogos',
       'Prototipação de Jogos 3D',
       'Design de Personagem',
-      'Instalações Multimídias'
+      'Design de Cenário',
+      'Programação para Jogos',
+      'Inteligência Computacional em Jogos'
     ]
   },
   {
@@ -41,6 +45,10 @@ export default [
       'Análise e projeto de sistemas multimídia',
       'Programação para World Wide Web',
       'Programação para sistemas embarcados',
+      'Computação Móvel e ubíqua',
+      'Programação para dispositivos móveis',
+      'Frameworks',
+      'Estratégias de programação'
     ]
   },
 ]

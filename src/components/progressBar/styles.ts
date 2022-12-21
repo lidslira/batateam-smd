@@ -7,7 +7,7 @@ interface FillerStyleProps{
 export const Container = styled.div`
   height: 22px;
   width: 200px;
-  background-color: #A8C2D3;
+  background-color: #87B296;
   margin-bottom: 20px;
   justify-content: center;
 `;

@@ -29,7 +29,7 @@ export const Button = styled.button`
   border-radius: 4px;
   border: none;
   padding: 10px 20px 10px 20px;
-  background: #A8C2D3;
+  background: #87B296;
   color: #000;
   box-shadow: 1px 1px 4px #000;
 

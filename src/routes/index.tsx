@@ -18,10 +18,12 @@ import Sistemas from '../pages/trails/Sistemas';
 import Optativas from '../pages/optativas';
 import Obrigatórias from '../pages/obrigatórias';
 import Eletivas from '../pages/eletivas';
+import ScrollToTop from '../utils/scrollToTop';
 
 const AllRoutes = () => {
   return (
     <Router>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={ <PreInitial/> } />
         <Route path="/explanation" element={ <Explanation/> } />

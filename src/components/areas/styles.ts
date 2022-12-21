@@ -11,14 +11,18 @@ interface ImageProps {
 
 export const Container = styled.main<ContainerProps>`
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
-  margin: 0px 0px 0px 0px;
-  padding: 15px 10px 15px 30px;
+  text-align: ${({ hasSpecialBg }) => hasSpecialBg ? 'center' : 'auto'};
+  justify-content: center;
+  margin: 0px 0px 20px 0px;
+  padding: ${({ hasSpecialBg }) => hasSpecialBg ? '30px 10px 30px 30px' : '0px 0px 0px 0px'};
+  height: ${({ hasSpecialBg }) => hasSpecialBg ? '400px' : 'auto'};
   padding-bottom: 10px;
   flex-direction: column;
 
-  background-color: ${({ hasSpecialBg }) => hasSpecialBg ? '#F1EDE6' : '#fff'};
+  background-color: ${({ hasSpecialBg }) => hasSpecialBg ? '#F8F8F8' : '#fff'};
 
   @media ${device.mobile} {
     padding: 15px 0px 100px 50px;
@@ -35,8 +39,8 @@ export const ButtonContainer = styled.div`
   width: 100%;
 `;
 
-export const Section = styled.section`
-  max-width: 500px;
+export const Section = styled.section<ContainerProps>`
+  max-width: ${({ hasSpecialBg }) => hasSpecialBg ? '800px' : '400px'};
   width: 100%;
 
   h1 {
@@ -44,7 +48,7 @@ export const Section = styled.section`
     font-weight: bold;
     word-wrap: break-word;    
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: ${({ hasSpecialBg }) => hasSpecialBg ? '30px' : '10px'};
 
     @media (${device.mobile}) {
       font-size: 2rem;
@@ -63,7 +67,7 @@ export const Section = styled.section`
     font-family: 'Poppins', sans-serif;
     margin: 10px 0px 5px 0px;
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.8rem;
 
     @media (${device.mobile}) {
@@ -78,12 +82,13 @@ export const Section = styled.section`
 
 export const ImageContainer = styled.div<ImageProps>`
   display: flex;
-  height: 400px;
+  height: 600px;
   width: 100%;
+  align-items: center;
   justify-content: center;
   margin: ${({ isImageLeft }) => isImageLeft ? `0px 30px 0px 0px` : '0px 0px 0px 30px'};
   max-width: 300px;
-  padding: 0px 3px 0px 3px;
+  /* padding: -30px 0px 0px 3px; */
   /* border: 2px dashed black; */
 
   @media ${device.mobile} {
@@ -95,6 +100,6 @@ export const ImageContainer = styled.div<ImageProps>`
 
 
 export const Image = styled.img`
-  height: 105%;
+  height: 100%;
   align-items: center;
 `;

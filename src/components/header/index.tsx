@@ -5,7 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import "./navbar.scss";
 
-import LogoBatateam from '../../assets/logo-batateam-expand.png';
+import Logo from '../../assets/azimute-logo.png';
 
 function Navbar() {
   const navigate = useNavigate();
@@ -40,23 +40,23 @@ function Navbar() {
   };
 
   return (
-    <header className="header">
+    <header className="header" style={{zIndex: 2}}>
       <div className="header__content">
-        {/* <Link to="/home" className="header__content__img">
-          <img className="header__content__img" src={LogoBatateam} alt="Logo Batateam" />
-        </Link> */}
+        <Link to="/home" className="header__content__img">
+          <img className="header__content__img" src={Logo} alt="Logo Batateam" />
+        </Link>
         <nav
           className={`${"header__content__nav"} 
             ${menuOpen && size.width < 780 ? `${"isMenu"}` : ""}
           `}
         >
           <ul>
-            <li>
+            {/* <li>
               <Link to="/home">Home</Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link to="/explanation">Tela de Explicação</Link>
-            </li>
+            </li> */}
             <li>
               <a href="/home#trilhas">Trilhas</a> { menuOpen ? 
               trailsOpen ? 

@@ -13,12 +13,14 @@ export const Container = styled.main<ContainerProps>`
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0px 0px 0px 0px;
-  padding: 15px 10px 15px 10px;
+  padding: ${({ hasSpecialBg }) => hasSpecialBg ? '30px 10px 30px 30px' : '0px 0px 0px 0px'};
+  height: 500px;
   padding-bottom: 10px;
   flex-direction: column;
 
-  background-color: ${({ hasSpecialBg }) => hasSpecialBg ? '#F1EDE6' : '#fff'};
+  background-color: ${({ hasSpecialBg }) => hasSpecialBg ? '#F8F8F8' : '#fff'};
 
 `;
 
@@ -36,8 +38,8 @@ export const Section = styled.section`
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     word-wrap: break-word;    
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2.6rem;
+    margin-bottom: 20px;
 
     @media (${device.mobile}) {
       font-size: 1.9rem;
@@ -111,10 +113,43 @@ export const Button = styled.button`
 
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
-  color: #27282C;
+  color: #fff;
+  box-shadow: 1px 1px 5px #000;
 
   cursor: pointer;
   
   background-color: transparent;
   border: none;
+  border-radius: 12px;
+  background-color: #8BAB9A;
+  padding: 10px;
+`;
+
+export const ButtonGoBack = styled.button`
+  display: flex;
+  font-size: 1.1rem;
+  margin: 50px 0px 20px 0px;
+  justify-content: center;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  box-shadow: 1px 1px 5px #000;
+
+  cursor: pointer;
+  
+  background-color: transparent;
+  border: none;
+  border-radius: 12px;
+  background-color: #8BAB9A;
+  padding: 15px;
+  width: 300px;
+
+`;
+
+export const ButtonContainer = styled.div`
+  flex-direction: row;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
 `;
