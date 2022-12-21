@@ -58,12 +58,11 @@ function Results(): ReactElement {
               ))}
           </div>        
         </S.Section>
-        </S.Sidebar>
         <S.ImageContainer><S.Image src={SurveyResultado}/>  </S.ImageContainer>
-      </S.Container>
+        </S.Sidebar>
         
       { recomendations.length > 0 && (
-      <S.AreaSection>
+        <S.AreaSection>
       <S.ImageContainer><S.Image src={binoculo}/>  </S.ImageContainer>
       <S.Recomendations> <h2>Cadeiras Recomendadas</h2>
         <ul>
@@ -72,8 +71,15 @@ function Results(): ReactElement {
           })}
         </ul>
       </S.Recomendations> 
+      
+      
       </S.AreaSection>
       )}
+      <S.Buttons>
+        <S.ButtonGoBack onClick={() => navigate(`/home`)}> Voltar </S.ButtonGoBack>
+        <S.ButtonChangeTrail onClick={() => navigate(`/survey-questoes`)}> Refazer Teste </S.ButtonChangeTrail>
+      </S.Buttons>
+      </S.Container>
      <Footer/>
     </div> 
   );

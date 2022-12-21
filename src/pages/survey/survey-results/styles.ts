@@ -3,6 +3,7 @@ import { device } from '../../../constants/breakpoints';
 
 export const Container = styled.main`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 80vh;
@@ -16,6 +17,8 @@ export const Container = styled.main`
 export const Sidebar = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ButtonContainer = styled.div`
@@ -66,7 +69,7 @@ export const Section = styled.section`
 
 export const AreaSection = styled.section`
   width: 100%;
-  padding: 20px 0px 20px 0px;
+  padding: 30px 0px 20px 0px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -92,7 +95,6 @@ export const ImageContainer = styled.div`
   margin: 0px 100px 0px 100px;
   max-width: 200px;
   padding: 0px 3px 0px 3px;
-  /* border: 2px dashed black; */
 
   @media ${device.mobile} {
     height: 350px;
@@ -123,4 +125,51 @@ export const Recomendations = styled.div`
       font-size: 0.9rem;
     }
   }
+`;
+export const Buttons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+`;
+
+export const ButtonGoBack = styled.button`
+  display: flex;
+  font-size: 1.1rem;
+  margin: 50px 0px 20px 0px;
+  justify-content: center;
+  align-self: center;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  box-shadow: 1px 1px 5px #000;
+
+  cursor: pointer;
+  
+  background-color: transparent;
+  border: none;
+  border-radius: 12px;
+  background-color: #8BAB9A;
+  padding: 15px;
+  width: 300px;
+`;
+
+export const ButtonChangeTrail = styled.button`
+  display: flex;
+  font-size: 1.1rem;
+  margin: 10px 0px 20px 0px;
+  justify-content: center;
+  align-self: center;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #8BAB9A;
+  text-decoration: underline;
+
+  cursor: pointer;
+  
+  background-color: transparent;
+  border: none;
 `;
