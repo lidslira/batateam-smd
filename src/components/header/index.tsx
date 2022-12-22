@@ -55,9 +55,6 @@ function Navbar() {
               <Link to="/home">Home</Link>
             </li> */}
             <li>
-              <Link to="/planner">Planejamento</Link>
-            </li>
-            <li>
               <a href="/home#trilhas">Trilhas</a> { menuOpen ? 
               trailsOpen ? 
                 <FiChevronUp size={30} onClick={() => setTrailsOpen(false)}/> : 
@@ -88,6 +85,9 @@ function Navbar() {
               }
             <li>
               <Link to="/survey">Teste de afinidade</Link>
+            </li>
+            <li>
+              <Link to="/planner">Planejamento</Link>
             </li>
             <li>
               <Link to="/help">FAQ</Link>
