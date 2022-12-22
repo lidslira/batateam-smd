@@ -45,8 +45,11 @@ export const Button = styled.button`
   border: none;
   padding: 10px;
   background: #87B296;
-  color: #000;
+  color: #fff;
   box-shadow: 1px 1px 5px #000;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 
   /* width: 100%; */
   display: flex;
@@ -55,7 +58,7 @@ export const Button = styled.button`
 
   max-height: 53px;
 
-  margin: 15px 0px 10px 0px;
+  margin: 30px 0px 10px 0px;
 
   font-size: 1.2rem;
 

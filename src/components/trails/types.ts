@@ -10,4 +10,5 @@ export interface TrailsProps {
   hasList?: boolean;
   image?: string;
   navigateBack?: boolean;
+  optativas?: string;
 }

@@ -38,6 +38,7 @@ function Jogos(): ReactElement {
               title={'Jogos Digitais'}
               navigateToCourses={'optativas'}
               subtitle={'Objetivo'}
+              optativas={'jogos'}
               description={'Apresentar uma visão integrada do desenvolvimento de jogos (e aplicações interativas em geral), em uma perspectiva multirreferencial, contemplando computação, arte e cultura.'}
               description2={'Os componentes curriculares da trilha oferecem múltiplas perspectivas sobre a interatividade em multimídia digital, contemplando aspectos teóricos e práticos no desenvolvimento de jogos.'}
             />

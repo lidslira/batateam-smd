@@ -38,6 +38,7 @@ function Audiovisual(): ReactElement {
               title={'Animação e Audiovisual'}
               navigateToCourses={'optativas'}
               subtitle={'Objetivo'}
+              optativas={'audiovisual'}
               description={'Possui o objetivo de capacitar os estudantes em diferentes meios de comunicação, usando recursos multimidiáticos na produção de recursos práticos, sendo eles formas de expressão e ferramentas de linguagem.'}
               description2={'Busca explorar os recursos tecnológicos, as ferramentas e os conhecimentos operacionais aplicados às áreas de produção artística, cultural e multimídia, para uso nas produções estudantis.'}
             />

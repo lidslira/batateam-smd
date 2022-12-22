@@ -8,7 +8,7 @@ import bg from '../../assets/faq-bg.png';
 
 import * as S from './styles';
 
-function Home(): ReactElement {
+function FAQ(): ReactElement {
   const [question1Open, setQuestion1Open] = useState<boolean>(false);
   const [question2Open, setQuestion2Open] = useState<boolean>(false);
   const [question3Open, setQuestion3Open] = useState<boolean>(false);
@@ -68,4 +68,4 @@ function Home(): ReactElement {
   );
 }
 
-export default Home;
+export default FAQ;

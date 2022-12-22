@@ -37,6 +37,7 @@ function Sistemas(): ReactElement {
               title={'Sistemas Multimídias'}
               navigateToCourses={'optativas'}
               subtitle={'Objetivo'}
+              optativas={'sistemas'}
               description={'Capacitar os alunos a analisar requisitos, projetar, implementar, testar, implantar, avaliar e manter sistemas computacionais para que atendam as necessidades do público alvo específico.'}
               description2={'Busca desenvolver nos discentes a capacidade de representar as informações nestes sistemas de forma múltipla, como por meio de imagens, vídeos e linguagem sonora, sejam elas integradas ou isoladas em mídias interativas.'}
             />

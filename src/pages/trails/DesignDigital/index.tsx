@@ -38,6 +38,7 @@ function Design(): ReactElement {
               title={'Design Digital Interativo'}
               navigateToCourses={'optativas'}
               subtitle={'Objetivo'}
+              optativas={'design'}
               description={'Tem o objetivo de aprofundar os conhecimentos sobre as bases teóricas e práticas do design e do desenvolvimento de tecnologias digitais interativos adquiridos na formação básica inicial do curso.'}
               description2={'Busca estimular uma visão crítica do processo de design e de suas funções (prática, estética e simbólica). Abrange a interatividade no design digital, e questões relativas a experiências do usuário.'}
             />

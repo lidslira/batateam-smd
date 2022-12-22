@@ -19,6 +19,7 @@ import Optativas from '../pages/optativas';
 import Obrigatórias from '../pages/obrigatórias';
 import Eletivas from '../pages/eletivas';
 import ScrollToTop from '../utils/scrollToTop';
+import Planner from '../pages/planner';
 
 const AllRoutes = () => {
   return (
@@ -34,6 +35,8 @@ const AllRoutes = () => {
         <Route path="/survey" element={ <Survey /> } />
         <Route path="/survey-questoes" element={ <SurveyQuestions /> } />
         <Route path="/survey-resultados" element={ <SurveyResults /> } />
+     
+        <Route path="/planner" element={ <Planner /> } />
 
         <Route path="/audiovisual" element={ <Audiovisual/> } />
         <Route path="/design" element={ <Design/> } />

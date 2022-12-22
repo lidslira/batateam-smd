@@ -18,7 +18,7 @@
 - [📁 Arquitetura do Projeto](#-Arquitetura-do-Projeto)
 - [👩🏾‍💻 Tecnologias e Dependências Utilizadas](#-Tecnologias-e-Dependências-Utilizadas)
 - [👩🏾‍🔧 Instalação](#-Instalação)
-- [🔧 Requisitos funcionais do sistema](#-Requisitos-Funcionais-Do-Sistema)
+- [🔧 Requisitos Funcionais do Sistema](#-Requisitos-Funcionais-Do-Sistema)
 
 
 <!--te-->
@@ -49,7 +49,7 @@ O público-alvo da nossa aplicação é dividido em 2 grupos: Alunos do curso de
 
 <br>
 
-## 🔧  Requisitos funcionais do sistema
+## 🔧  Requisitos Funcionais do Sistema
 
 <br>
 
@@ -60,7 +60,8 @@ O público-alvo da nossa aplicação é dividido em 2 grupos: Alunos do curso de
 | `RFG0003`    | Menu |
 | `RFG0004`    | Acessar informações sobre trilhas específicas |
 | `RFG0005`    | Acessar informações sobre cadeiras específicas |
-| `RFG0006`    | Acessar teste de afinidade |
+| `RFG0006`    | Acessar Teste de Afinidade |
+| `RFG0007`    | Acessar Planejamento |
 | `RFG0008`    | Acessar FAQ |
 
 <br>

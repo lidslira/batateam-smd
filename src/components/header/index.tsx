@@ -54,9 +54,9 @@ function Navbar() {
             {/* <li>
               <Link to="/home">Home</Link>
             </li> */}
-            {/* <li>
-              <Link to="/explanation">Tela de Explicação</Link>
-            </li> */}
+            <li>
+              <Link to="/planner">Planejamento</Link>
+            </li>
             <li>
               <a href="/home#trilhas">Trilhas</a> { menuOpen ? 
               trailsOpen ? 

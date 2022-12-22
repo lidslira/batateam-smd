@@ -11,10 +11,13 @@
   "dependencies": {
     "apexcharts": "^3.36.3",
     "bootstrap": "^5.2.3",
+    "jsdom": "^20.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
     "react-likert-scale": "^4.1.2",
+    "react-render-html": "^0.6.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.4.4",
     "sass": "^1.56.1",
@@ -23,6 +26,7 @@
   "devDependencies": {
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
+    "@types/react-helmet": "^6.1.6",
     "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^2.2.0",
     "typescript": "^4.6.4",

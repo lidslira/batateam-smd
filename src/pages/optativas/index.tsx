@@ -1,5 +1,5 @@
 import { ReactElement, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Footer from '../../components/footer';
 import Header  from '../../components/header';
 import optativas from '../../constants/optativas';
@@ -8,10 +8,18 @@ import bg from '../../assets/faq-bg.png';
 import upBottom from '../../assets/up-bottom.png';
 
 function Optativas(): ReactElement {
-  const [audiovisual, setAudiovisual] = useState<boolean>(true);
-  const [jogos, setJogos] = useState<boolean>(false);
-  const [design, setDesign] = useState<boolean>(false);
-  const [sistemas, setSistemas] = useState<boolean>(false);
+  const location = useLocation();
+  let audiovisualTrail = location.state.audiovisual;
+  let jogosTrail = location.state.jogos;
+  let sistemasTrail = location.state.sistemas;
+  let designTrail = location.state.design;
+
+  console.log(sistemasTrail)
+
+  const [audiovisual, setAudiovisual] = useState<boolean>(audiovisualTrail);
+  const [jogos, setJogos] = useState<boolean>(jogosTrail);
+  const [design, setDesign] = useState<boolean>(designTrail);
+  const [sistemas, setSistemas] = useState<boolean>(sistemasTrail);
   const [showModal, setShowModal] = useState<boolean>(false);
 
   const navigate = useNavigate();
